@@ -75,10 +75,13 @@ background-size: cover;
   margin-right: -80px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; 
+    @media screen and (max-width: 769px) {
+    width:100%;
+}
   img{
     height: 460px;
     @media screen and (max-width: 769px) {
-    width:100vw;
+    width:100%;
 }
 
   }

@@ -94,7 +94,7 @@ transition: 0.3s all ease;
     box-shadow: 2px 5px 6px 0px  rgba(0,0,6,0.2);
 }
 @media screen and (max-width: 768px) {
-    width: 100vw;
+    width: 100%;
 }
 `
 
