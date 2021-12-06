@@ -74,6 +74,8 @@ display: flex;
 padding-bottom: 90px;
 @media screen and (max-width: 768px) {
     width: 100%;
+    padding: 30px;
+    flex-direction: column;
     justify-content: center;
 }
 `
@@ -105,7 +107,7 @@ align-items: center;
 padding: 50px;
 @media screen and (max-width: 768px) {
     width: 100%;
-    padding: 10px;
+    padding: 30px;
 }
 `
 export const WWOCardimage = styled.div`
