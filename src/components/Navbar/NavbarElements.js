@@ -123,10 +123,10 @@ padding: 0 1rem;
 height: 100%;
 cursor: pointer;
 &.active{
-    color: #900;
+    color: #ED1C24;
   }
 &:hover{
-    color: #900;
+    color: #ED1C24;
   };
 &.active {
  border-bottom: 3px solid #15cdfc;

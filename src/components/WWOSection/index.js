@@ -18,7 +18,7 @@ const WWOSection = ({isOpen,toggle}) => {
                   
                   <WWOCardContent>
                       <WWOCCHeading>Commercial Tires</WWOCCHeading>
-                      <WWOCCParagraph>The Right Tires For Your Fleet. It’s easy to find the right total solution for your fleet. With a wide selection of innovative commercial truck tires and services to back them up, your fleet can start saving today.</WWOCCParagraph>
+                      <WWOCCParagraph className='Margin-bottom'>The Right Tires For Your Fleet. It’s easy to find the right total solution for your fleet. With a wide selection of innovative commercial truck tires and services to back them up, your fleet can start saving today.</WWOCCParagraph>
                       {/* <WWOCCButton>See More</WWOCCButton> */}
                   </WWOCardContent>
               </WWOCArd>

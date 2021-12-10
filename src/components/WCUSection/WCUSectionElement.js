@@ -71,17 +71,26 @@ align-items: center;
 `
 export const BlueDot = styled.div`
 display: block;
-width: 18px;
-height: 18px;
+width: 12px;
+height: 12px;
 z-index: 10;
 border-radius: 50%;
+margin-right: 10px;
 background: #0076C8;
  
 @media screen and (max-width: 768px) {
-   
+   display: none;
   }
 
 `
+export const BluedotContainer = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+
+`
+
+
 export const GroupContent = styled.div`
 display: flex;
 flex-direction:column;

@@ -1,5 +1,5 @@
 import React from 'react'
-import {WCUContainer,WCUHeding,WCUSubHeding,WCUContent,WCUCardContainer,WCUCard,WCUCardImage,WCUCardContent,WCUCHeading,WCUCParagraph,WCUCButton,BlueDot,GroupContent} from './WCUSectionElement'
+import {WCUContainer,BluedotContainer,BlueDot,WCUHeding,WCUSubHeding,WCUContent,WCUCardContainer,WCUCard,WCUCardImage,WCUCardContent,WCUCHeading,WCUCParagraph,WCUCButton,GroupContent} from './WCUSectionElement'
 import TireFeaturing from '../../images/WCUTire.png'
 
 const WCUSection = ({isOpen,toggle}) => {
@@ -15,10 +15,15 @@ const WCUSection = ({isOpen,toggle}) => {
                   <WCUCardContent>
                   {/* <BlueDot/> */}
                   <GroupContent>
-                 
+                      <BluedotContainer>
+                      <BlueDot></BlueDot>
                   <WCUCHeading>24/7 Nationalwide Road Services</WCUCHeading>
-                  <WCUCHeading>On Site Services
-                  </WCUCHeading>
+                      </BluedotContainer>
+                      <BluedotContainer>
+                      <BlueDot></BlueDot>
+                            <WCUCHeading>On Site Services
+                                </WCUCHeading>
+                        </BluedotContainer>
                   
                   </GroupContent>
                       
@@ -28,10 +33,16 @@ const WCUSection = ({isOpen,toggle}) => {
                   <WCUCardContent>
                   {/* <BlueDot/> */}
                   <GroupContent>
+                  <BluedotContainer>
+                      <BlueDot></BlueDot>
                   <WCUCHeading>Scheduled Maintainence Program</WCUCHeading>
+                    </BluedotContainer>
+                  <BluedotContainer>
+                      <BlueDot></BlueDot>
                       <WCUCHeading>
          Mounted Wheel Program
                       </WCUCHeading>
+                    </BluedotContainer>
                       
                 </GroupContent>
                       
@@ -47,10 +58,16 @@ const WCUSection = ({isOpen,toggle}) => {
                   <WCUCardContent>
                   {/* <BlueDot/> */}
                       <GroupContent>
+                      <BluedotContainer>
+                      <BlueDot></BlueDot>
                       <WCUCHeading>Trucks And Trailers Alignments</WCUCHeading>
+                        </BluedotContainer>
+                      <BluedotContainer>
+                      <BlueDot></BlueDot>
                       <WCUCHeading>
             Heavy Duty Front-End Work
                       </WCUCHeading>
+                        </BluedotContainer>
                       
                       
                       </GroupContent>
@@ -60,8 +77,14 @@ const WCUSection = ({isOpen,toggle}) => {
                   <WCUCardContent>
                       {/* <BlueDot/> */}
                   <GroupContent>
+                  <BluedotContainer>
+                      <BlueDot></BlueDot>
                   <WCUCHeading>Tire Mounting and Balancing</WCUCHeading>
+                    </BluedotContainer>
+                  <BluedotContainer>
+                      <BlueDot></BlueDot>
                   <WCUCHeading>Pick Up And Delivery Service</WCUCHeading>
+                    </BluedotContainer>
                   <WCUCHeading></WCUCHeading>
                      
                   </GroupContent>
