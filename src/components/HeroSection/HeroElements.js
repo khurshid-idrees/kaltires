@@ -120,6 +120,10 @@ align-items: center;
 @media screen and (max-width: 768px) {
     display: none;
 }
+@media (min-width:1209px) and (max-width:1548px) {
+    margin-top: 550px;
+    
+};
 `
 export const HeroPromo = Styled.div`
 padding: 20px;
