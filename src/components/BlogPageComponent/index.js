@@ -9,6 +9,13 @@ export default function BlogPageComponent({ posts }) {
   return (
     <>
       <AboutContainer>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <AboutContainerSubHeading>Blogs</AboutContainerSubHeading>
         {posts.map((p) => (
           <Post post={p}></Post>

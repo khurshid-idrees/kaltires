@@ -1,12 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 export const AboutContainer = styled.div`
   background: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
   width: auto;
-  min-height: 65vh;
   height: auto;
 `;
 export const AboutContainerSubHeading = styled.h2`
@@ -14,8 +12,9 @@ export const AboutContainerSubHeading = styled.h2`
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
+  text-align: center;
   line-height: 42px;
-
+  padding-top:4rem
   color: #010101;
 
   @media screen and (max-width: 768px) {

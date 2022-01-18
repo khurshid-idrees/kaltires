@@ -1,7 +1,7 @@
-import { FaBars } from "react-icons/fa";
-import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
-import styled from "styled-components";
+import { FaBars } from 'react-icons/fa';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
+import styled from 'styled-components';
 
 export const AboutContainer = styled.div`
   background: #fff;
@@ -19,13 +19,13 @@ export const AboutContainerContent = styled.div`
   flex-wrap: nowrap;
   flex-direction: row;
 
-  justify-content: space-around;
+  justify-content: center;
   margin: 0px 90px 0px 90px;
   padding-right: -30px;
   width: 80%;
   @media screen and (max-width: 2068px) {
     width: 80%;
-    margin: 0px;
+    margin: 3rem;
   }
   @media screen and (max-width: 968px) {
     flex-direction: column;
@@ -38,6 +38,7 @@ export const SpaceTruck = styled.div`
   width: 300px;
 `;
 export const AboutContainerTextContent = styled.div`
+  background-color: #dcdcdc;
   display: flex;
   padding: 55px 0px 10px 10px;
   width: 45%;
@@ -60,10 +61,11 @@ export const ATHSectionInfo = styled.div`
   align-items: flex-start;
 `;
 export const AboutContainerImageContent = styled.div`
-  background-size: cover;
 
+  width:100px
+  color:grey;
   background-blend-mode: screen;
-  margin-right: -80px;
+ 
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   @media screen and (max-width: 769px) {
@@ -71,6 +73,8 @@ export const AboutContainerImageContent = styled.div`
   }
   img {
     height: 420px;
+    width: 400px;
+    
     @media screen and (max-width: 769px) {
       width: 100%;
     }
@@ -208,7 +212,11 @@ export const TextContainer = styled.div`
   }
 `;
 export const ListBlogContainer = styled.div`
+
   display: flex;
+  padding: 30px
+  margin: 20px
+  
   flex-direction: column;
 `;
 export const OneListBlogContainer = styled.div`

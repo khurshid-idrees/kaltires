@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import {
   AboutContainer,
   AboutContainerImageContent2,
@@ -20,12 +20,12 @@ import {
   OLBCHeadingContainer,
   MainContentContainer,
   OneListBlogImageContent,
-} from "./PostElement.js";
+} from './PostElement.js';
 
 export default function Post({ post }) {
   //   console.log(`simple post${postss}`);
   //   console.log(` postsss ${posts}`);
-  const maaxstring = 400;
+  const maaxstring = 200;
   const x = 0;
   const desc = post.desc;
   const discription = [];
@@ -41,7 +41,21 @@ export default function Post({ post }) {
   //   console.log(`description h ye${trimmedString}`);
   return (
     <ListBlogContainer>
-      <OneListBlogContainer>
+      <AboutContainerContent>
+        <Link to={`/post/${post._id}`} descs={post.desc}>
+          <AboutContainerImageContent>
+            <img src={post.photo} alt="" />
+          </AboutContainerImageContent>
+        </Link>
+        <AboutContainerTextContent>
+          <AboutContainerHeading>
+            {new Date(post.createdAt).toDateString()}
+          </AboutContainerHeading>
+          <AboutContainerSubHeading>{post.title}</AboutContainerSubHeading>
+          <AboutContainerPara>{discription[0]}</AboutContainerPara>
+        </AboutContainerTextContent>
+      </AboutContainerContent>
+      {/* <OneListBlogContainer>
         <OneListBlogImageContent>
           <img src={post.photo} alt="" />
         </OneListBlogImageContent>
@@ -51,7 +65,7 @@ export default function Post({ post }) {
         <Link to={`/post/${post._id}`} descs={post.desc}>
           <OLBCHeadingContainer>{post.title}</OLBCHeadingContainer>
         </Link>
-      </OneListBlogContainer>
+      </OneListBlogContainer> */}
     </ListBlogContainer>
     // <AboutContainer id="About">
     //   <AboutContainerContent>

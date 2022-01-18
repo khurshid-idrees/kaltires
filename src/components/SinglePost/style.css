@@ -1,0 +1,87 @@
+.container img {
+  width: 100%;
+  height: 50rem;
+  position: relative;
+}
+.container .box1 {
+  height: 20rem;
+  width: 42rem;
+  background-color: rgba(28, 28, 28, 0.8);
+  color: #fff;
+  padding: 3rem;
+  position: absolute;
+  top: 19rem;
+  left: 9rem;
+  right: 0;
+  bottom: 0;
+}
+.container .box1 h2 {
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: #b2c8ce;
+}
+.container .box1 h1 {
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.1rem;
+  color: #fff;
+}
+.container .box1 p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.005rem;
+  color: #fff;
+}
+
+.container-2 {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.container-2 .content p {
+  width: 50rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.7rem;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.container-2 .content a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  width: 50rem;
+  overflow-wrap: break-word;
+}
+.container-2 .content h1 {
+  width: 50rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  letter-spacing: 0.05rem;
+  line-height: 1.7rem;
+  text-align: left;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  text-align: left;
+}
+
+.container-2 .content img {
+  width: 47rem;
+  text-align: left;
+}
