@@ -24,6 +24,8 @@ import {
   MainContentContainer,
   OneListBlogImageContent,
 } from './SinglePostElement.js';
+import Navbar from '../Navbar';
+import Sidebar from '../Sidebar';
 
 const SinglePost = ({ descs }) => {
   const location = useLocation();
@@ -33,7 +35,9 @@ const SinglePost = ({ descs }) => {
   const [desc, setDesc] = useState({});
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get('http://localhost:5000/api/posts/' + path);
+      const res = await axios.get(
+        'https://kaltireblogs.herokuapp.com/api/posts/' + path
+      );
       setPosts(res.data);
       setDesc(res.data.desc);
     };
@@ -59,6 +63,8 @@ const SinglePost = ({ descs }) => {
 
   return (
     <>
+      <Sidebar></Sidebar>
+      <Navbar Speed={true}></Navbar>
       <div class="container">
         <img src={posts.photo} alt="" />
         <div class="box1">
