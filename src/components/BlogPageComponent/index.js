@@ -44,7 +44,7 @@ export default function BlogPageComponent() {
         <AboutContainerSubHeading>Blogs</AboutContainerSubHeading>
         {!done ? (
           <center>
-            <ReactLoading type="spin" color="#0000FF" height={100} width={50} />
+            <ReactLoading type="spin" color="#0076C8" height={100} width={50} />
           </center>
         ) : (
           <div>
