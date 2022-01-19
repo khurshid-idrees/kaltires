@@ -1,11 +1,36 @@
 import TiresWareHouse from '../../images/TireWarehouse.jpeg';
 import Post from '../Post';
+import ReactLoading from 'react-loading';
+import styled from 'styled-components';
+import React, { useState, useEffect } from 'react';
+
+import axios from 'axios';
 
 import {
   AboutContainerSubHeading,
   AboutContainer,
 } from './BlogComponentElements';
-export default function BlogPageComponent({ posts }) {
+const center = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+`;
+export default function BlogPageComponent() {
+  const [posts, setPosts] = useState([]);
+  const [done, setDone] = useState(undefined);
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const res = await axios.get(
+        'https://kaltireblogs.herokuapp.com/api/posts'
+      );
+      setPosts(res.data);
+      setDone(true);
+    };
+    fetchPosts();
+  }, []);
   return (
     <>
       <AboutContainer>
@@ -17,9 +42,17 @@ export default function BlogPageComponent({ posts }) {
         <br />
         <br />
         <AboutContainerSubHeading>Blogs</AboutContainerSubHeading>
-        {posts.map((p) => (
-          <Post post={p}></Post>
-        ))}
+        {!done ? (
+          <center>
+            <ReactLoading type="spin" color="#0000FF" height={100} width={50} />
+          </center>
+        ) : (
+          <div>
+            {posts.map((p) => (
+              <Post post={p}></Post>
+            ))}
+          </div>
+        )}
       </AboutContainer>
 
       {/* <contentContainer>
