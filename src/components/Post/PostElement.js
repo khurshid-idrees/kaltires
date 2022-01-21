@@ -218,6 +218,7 @@ export const ListBlogContainer = styled.div`
   margin: 20px
   
   flex-direction: column;
+  justify-content: center;
 `;
 export const OneListBlogContainer = styled.div`
   display: flex;

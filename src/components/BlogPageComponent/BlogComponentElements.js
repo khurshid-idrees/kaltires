@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import bgimage from '../../images/Bg.png';
 export const AboutContainer = styled.div`
   background: #fff;
   display: flex;
@@ -10,8 +11,13 @@ export const AboutContainer = styled.div`
 export const AboutContainerSubHeading = styled.h2`
   font-family: Roboto;
   font-style: normal;
+  zindex: 1;
   font-weight: bold;
+  left: 50%;
+  right: 50%;
   font-size: 36px;
+  display: block;
+  postion: absolute;
   text-align: center;
   line-height: 42px;
   padding-top:4rem
@@ -42,5 +48,23 @@ export const AboutContainerPara = styled.p`
   }
   @media screen and (max-width: 480px) {
     font-size: 18px;
+  }
+`;
+export const BlogHero = styled.div`
+  background: transparent url(${bgimage}) no-repeat center center;
+  position: relative;
+  display: block;
+  clip-path: ellipse(100% 90% at 49% 9%);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 90vh;
+
+  overflow: hidden;
+  @media screen and (max-width: 768px) {
+    height:100%
+    width:100%  
   }
 `;

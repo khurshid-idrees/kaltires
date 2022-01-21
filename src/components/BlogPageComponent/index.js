@@ -9,6 +9,7 @@ import axios from 'axios';
 import {
   AboutContainerSubHeading,
   AboutContainer,
+  BlogHero,
 } from './BlogComponentElements';
 const center = styled.div`
   display: flex;
@@ -17,6 +18,12 @@ const center = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
+`;
+const Posts = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 export default function BlogPageComponent() {
   const [posts, setPosts] = useState([]);
@@ -33,25 +40,19 @@ export default function BlogPageComponent() {
   }, []);
   return (
     <>
+      <BlogHero></BlogHero>
       <AboutContainer>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <AboutContainerSubHeading>Blogs</AboutContainerSubHeading>
         {!done ? (
           <center>
             <ReactLoading type="spin" color="#0076C8" height={100} width={50} />
           </center>
         ) : (
-          <div>
+          <Posts>
             {posts.map((p) => (
               <Post post={p}></Post>
             ))}
-          </div>
+          </Posts>
         )}
       </AboutContainer>
 

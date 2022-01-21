@@ -42,17 +42,19 @@ export default function Post({ post }) {
   return (
     <ListBlogContainer>
       <AboutContainerContent>
-        <Link to={`/post/${post._id}`} descs={post.desc}>
-          <AboutContainerImageContent>
-            <img src={post.photo} alt="" />
-          </AboutContainerImageContent>
-        </Link>
+        <AboutContainerImageContent>
+          <img src={post.photo} alt="" />
+        </AboutContainerImageContent>
+
         <AboutContainerTextContent>
           <AboutContainerHeading>
             {new Date(post.createdAt).toDateString()}
           </AboutContainerHeading>
           <AboutContainerSubHeading>{post.title}</AboutContainerSubHeading>
           <AboutContainerPara>{discription[0]}</AboutContainerPara>
+          <AboutContainerButton to={`/post/${post._id}`} descs={post.desc}>
+            Read More
+          </AboutContainerButton>
         </AboutContainerTextContent>
       </AboutContainerContent>
       {/* <OneListBlogContainer>
