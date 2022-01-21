@@ -3,6 +3,8 @@ import bgimage from '../../images/Bg.png';
 export const AboutContainer = styled.div`
   background: #fff;
   display: flex;
+  postion: relative;
+
   flex-direction: column;
   justify-content: space-around;
   width: auto;
@@ -13,15 +15,15 @@ export const AboutContainerSubHeading = styled.h2`
   font-style: normal;
   zindex: 1;
   font-weight: bold;
-  left: 50%;
-  right: 50%;
-  font-size: 36px;
+  
+  font-size: 46px;
   display: block;
   postion: absolute;
-  text-align: center;
+ 
   line-height: 42px;
   padding-top:4rem
   color: #010101;
+  padding-right: 2rem;
 
   @media screen and (max-width: 768px) {
     font-size: 28px;
@@ -29,6 +31,20 @@ export const AboutContainerSubHeading = styled.h2`
   @media screen and (max-width: 480px) {
     font-size: 20px;
   }
+`;
+export const BlogContainer1Content = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+export const Containerorlist = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+`;
+export const BlogContainer1EContent = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 export const AboutContainerPara = styled.p`
   margin-top: 4px;

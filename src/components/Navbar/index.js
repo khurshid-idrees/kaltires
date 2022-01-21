@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { FaBars } from "react-icons/fa";
-import logo from "../../images/logo.png";
-import { IconContext } from "react-icons/lib";
-import { animateScroll as scroll, Link } from "react-scroll";
+import React, { useEffect, useState } from 'react';
+import { FaBars } from 'react-icons/fa';
+import logo from '../../images/logo.png';
+import { IconContext } from 'react-icons/lib';
+import { animateScroll as scroll, Link } from 'react-scroll';
 
 import {
   Nav,
@@ -15,7 +15,7 @@ import {
   MobileIcon,
   NavItem,
   NavLinks,
-} from "./NavbarElements";
+} from './NavbarElements';
 
 const Navbar = ({ toggle, Speed }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -31,14 +31,14 @@ const Navbar = ({ toggle, Speed }) => {
     }
   };
   useEffect(() => {
-    window.addEventListener("scroll", changeNav);
+    window.addEventListener('scroll', changeNav);
   }, []);
   const toggleHome = () => {
     scroll.scrollToTop();
   };
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff", size: "1em" }}>
+      <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
@@ -105,7 +105,7 @@ const Navbar = ({ toggle, Speed }) => {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLink to="blogPage">
+                <NavLink to="blogs">
                   <Link
                     to="blogPage"
                     smooth={true}
@@ -114,7 +114,7 @@ const Navbar = ({ toggle, Speed }) => {
                     exact={true}
                     offset={-80}
                   >
-                    BlogPage
+                    Blogs
                   </Link>
                 </NavLink>
               </NavItem>
@@ -134,7 +134,7 @@ const Navbar = ({ toggle, Speed }) => {
             </NavMenu>
             <NavBtn>
               <NavBtnLink to="Contact Us">
-                {" "}
+                {' '}
                 <Link
                   to="ContactUs"
                   smooth={true}
