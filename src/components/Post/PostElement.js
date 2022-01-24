@@ -196,9 +196,10 @@ margin-top: -8%; */
 `;
 export const AboutContainerHeading = styled.div`
   font-family: Roboto;
-  font-style: normal;
-
-  font-size: 23px;
+  font-style: bold;
+  font-weight: bold;
+  margin-top: 10rem;
+  font-size: 2rem;
   line-height: 42px;
 
   color: #111;

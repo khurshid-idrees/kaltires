@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   AboutContainer,
   AboutContainerImageContent2,
@@ -11,14 +11,16 @@ import {
   AboutContainerButton,
   AboutContainerImageContent,
   AboutContainerImage,
-} from "./DAboutSectionElement";
-import TiresWareHouse from "../../images/TireWarehouse.jpeg";
+} from './DAboutSectionElement';
+import TiresWareHouse from '../../images/TireWarehouse.jpeg';
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 const DAboutSection = ({ isOpen, toggle }) => {
+  const location = useLocation();
   return (
     <AboutContainer id="About">
       <AboutContainerContent>
         <AboutContainerTextContent>
-          <AboutContainerHeading>KAL TIRES</AboutContainerHeading>
+          <AboutContainerHeading>KAL TIRES</AboutContainerHeading>s
           <AboutContainerSubHeading>Who we are</AboutContainerSubHeading>
           <AboutContainerPara>
             Kal Tires has 9 distribution centers, 4 service centers and

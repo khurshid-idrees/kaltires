@@ -8,6 +8,7 @@ import FooterSection from './components/FooterSection';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import SinglePost from './components/SinglePost';
+import Bloglist from './components/Bloglist';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +21,9 @@ function App() {
 
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/blogs" component={BlogPage} />
+        <Route exact path="/blogs" component={Bloglist} />
         <Route path="/post/:postId" component={SinglePost}></Route>
+        <Route path="/bloglist" component={BlogPage}></Route>
       </Switch>
 
       {/* <Switch>

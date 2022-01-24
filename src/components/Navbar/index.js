@@ -50,7 +50,7 @@ const Navbar = ({ toggle, Speed }) => {
               <NavItem>
                 <NavLinks>
                   <Link
-                    to="Home"
+                    to="/#Home"
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -65,7 +65,7 @@ const Navbar = ({ toggle, Speed }) => {
               <NavItem>
                 <NavLinks>
                   <Link
-                    to="About"
+                    to="/#About"
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -79,7 +79,7 @@ const Navbar = ({ toggle, Speed }) => {
               <NavItem>
                 <NavLinks>
                   <Link
-                    to="Products"
+                    to="/#Products"
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -93,7 +93,7 @@ const Navbar = ({ toggle, Speed }) => {
               <NavItem>
                 <NavLinks>
                   <Link
-                    to="Advantages"
+                    to="/#Advantages"
                     smooth={true}
                     duration={500}
                     spy={true}
