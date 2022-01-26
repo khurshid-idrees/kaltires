@@ -4,6 +4,7 @@ import Stickbar from './components/Stickbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages';
 import BlogPage from './pages/Blog';
+import NotFoundPage from './pages/NotFoundPage';
 import FooterSection from './components/FooterSection';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
@@ -17,13 +18,12 @@ function App() {
   };
   return (
     <Router>
-      <Stickbar />
-
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/blogs" component={Bloglist} />
         <Route path="/post/:postId" component={SinglePost}></Route>
         <Route path="/bloglist" component={BlogPage}></Route>
+        <Route path="*" component={NotFoundPage} />
       </Switch>
 
       {/* <Switch>
