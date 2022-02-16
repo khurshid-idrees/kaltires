@@ -14,9 +14,8 @@ const BlogPage = () => {
 
   return (
     <>
-      <Stickbar />
       <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
-      <Navbar Speed={true} toggle={toggle}></Navbar>
+      <Navbar Speed={true} toggle={toggle} bg={true}></Navbar>
 
       <BlogPageComponent></BlogPageComponent>
     </>

@@ -19,9 +19,8 @@ const Home = () => {
   };
   return (
     <>
-      <Stickbar />
       <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
-      <Navbar toggle={toggle}></Navbar>
+      <Navbar toggle={toggle} bg={false}></Navbar>
       <HeroSection></HeroSection>
       {/* <UAboutSection></UAboutSection> */}
       <DAboutSection></DAboutSection>

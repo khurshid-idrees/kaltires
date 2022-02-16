@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   WWOContainer,
   WWOHeding,
@@ -12,10 +12,10 @@ import {
   WWOCCParagraph,
   WWOCCButton,
   WWOCardimage,
-} from "./WWOSectionElement";
-import CommercialTire from "../../images/CommercialTire.png";
-import IndustrialTire from "../../images/IndustrialTire.png";
-import EarthMoverTire from "../../images/EarthMoverTire.png";
+} from './WWOSectionElement';
+import CommercialTire from '../../images/CommercialTire.png';
+import IndustrialTire from '../../images/IndustrialTire.png';
+import EarthMoverTire from '../../images/EarthMoverTire.png';
 const WWOSection = ({ isOpen, toggle }) => {
   return (
     <WWOContainer id="Products">
@@ -54,7 +54,7 @@ const WWOSection = ({ isOpen, toggle }) => {
           <WWOCardContent>
             <WWOCCHeading>Industrial Tires</WWOCCHeading>
             <WWOCCParagraph>
-              {" "}
+              {' '}
               Whether it is loading or excavating, lifting or material handling
               – you are looking for reliable high-performance tires so that you
               can do your job in full safety. Browse for your tire, based on
@@ -71,7 +71,7 @@ const WWOSection = ({ isOpen, toggle }) => {
           <WWOCardContent>
             <WWOCCHeading>Earthmover Tires</WWOCCHeading>
             <WWOCCParagraph>
-              {" "}
+              {' '}
               Mining and construction are the toughest sectors on Earth. So are
               the requirements for equipment – and tires, of course. Browse for
               your tire to see which performance features best suit your

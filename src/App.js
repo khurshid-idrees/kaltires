@@ -18,6 +18,8 @@ function App() {
   };
   return (
     <Router>
+      <Stickbar />
+
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/blogs" component={Bloglist} />

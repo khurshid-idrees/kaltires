@@ -20,7 +20,7 @@ const DAboutSection = ({ isOpen, toggle }) => {
     <AboutContainer id="About">
       <AboutContainerContent>
         <AboutContainerTextContent>
-          <AboutContainerHeading>KAL TIRES</AboutContainerHeading>s
+          <AboutContainerHeading>KAL TIRES</AboutContainerHeading>
           <AboutContainerSubHeading>Who we are</AboutContainerSubHeading>
           <AboutContainerPara>
             Kal Tires has 9 distribution centers, 4 service centers and

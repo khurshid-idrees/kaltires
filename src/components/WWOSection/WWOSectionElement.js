@@ -1,10 +1,10 @@
-import { FaBars } from "react-icons/fa";
-import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
-import styled from "styled-components";
-import WWO1 from "../../images/WWO1.png";
-import WWO2 from "../../images/WWO2.png";
-import WWO3 from "../../images/WWO2.png";
+import { FaBars } from 'react-icons/fa';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
+import styled from 'styled-components';
+import WWO1 from '../../images/WWO1.png';
+import WWO2 from '../../images/WWO2.png';
+import WWO3 from '../../images/WWO2.png';
 export const WWOContainer = styled.div`
   background: #c1c1c1;
 
@@ -83,7 +83,6 @@ export const WWOCArd = styled.div`
   z-index: 5;
   background-color: #ffffff;
 
-  flex-direction: column;
   align-items: center;
   transition: 0.3s all ease;
   &:hover {
@@ -91,6 +90,7 @@ export const WWOCArd = styled.div`
   }
   @media screen and (max-width: 768px) {
     width: 100%;
+    postion: relative;
   }
 `;
 
@@ -98,16 +98,18 @@ export const WWOCardContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 50px;
+
   @media screen and (max-width: 768px) {
     width: 100%;
     padding: 30px;
+    position: relative;
   }
 `;
 export const WWOCardimage = styled.div`
-  display: flex;
   width: 100%;
-  height: 100%;
+
   @media screen and (max-width: 768px) {
     width: 100%;
   }

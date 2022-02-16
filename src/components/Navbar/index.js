@@ -17,9 +17,11 @@ import {
   NavLinks,
 } from './NavbarElements';
 
-const Navbar = ({ toggle, Speed }) => {
+const Navbar = ({ toggle, Speed, bg }) => {
   const [scrollNav, setScrollNav] = useState(false);
+  const [bgNav, setbglNav] = useState(false);
   console.log(Speed);
+
   const changeNav = () => {
     // if (Speed) {
     //   setScrollNav(false);
@@ -31,6 +33,7 @@ const Navbar = ({ toggle, Speed }) => {
     }
   };
   useEffect(() => {
+    setbglNav(bg);
     window.addEventListener('scroll', changeNav);
   }, []);
   const toggleHome = () => {
@@ -39,7 +42,7 @@ const Navbar = ({ toggle, Speed }) => {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
-        <Nav scrollNav={scrollNav}>
+        <Nav bg={bg}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
               <img src={logo} alt="logo" />
@@ -48,74 +51,64 @@ const Navbar = ({ toggle, Speed }) => {
             {/* <Bars onClick={toggle}/> */}
             <NavMenu>
               <NavItem>
-                <NavLinks>
-                  <Link
-                    to="/#Home"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact={true}
-                    offset={-80}
-                  >
-                    Home
-                  </Link>
+                <NavLinks
+                  to={bg ? '/' : 'Home'}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                  offset={-80}
+                >
+                  Home
                 </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks>
-                  <Link
-                    to="/#About"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact={true}
-                    offset={-80}
-                  >
-                    Who We Are
-                  </Link>
+                <NavLinks
+                  to={bg ? '/' : 'About'}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                  offset={-80}
+                >
+                  Who We Are
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks>
-                  <Link
-                    to="/#Products"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact={true}
-                    offset={-80}
-                  >
-                    What We Offer
-                  </Link>
+                <NavLinks
+                  to="Products"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                  offset={-80}
+                >
+                  What We Offer
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks>
-                  <Link
-                    to="/#Advantages"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact={true}
-                    offset={-80}
-                  >
-                    Why Choose Us
-                  </Link>
+                <NavLinks
+                  to="Advantages"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                  offset={-80}
+                >
+                  Why Choose Us
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLink to="blogs">
-                  <Link
-                    to="blogPage"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact={true}
-                    offset={-80}
-                  >
-                    Blogs
-                  </Link>
+                <NavLink
+                  to="blogs"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                  offset={-80}
+                >
+                  Blogs
                 </NavLink>
               </NavItem>
               {/* <NavItem>
