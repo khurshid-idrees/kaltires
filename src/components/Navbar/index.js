@@ -141,7 +141,7 @@ const Navbar = ({ toggle, Speed, bg }) => {
               </NavBtnLink>
             </NavBtn>
             <NavBtn>
-              <NavBtnLink>
+              <NavBtnLink href="/Credit">
                 <a
                   href="/Credit"
                   smooth={true}
