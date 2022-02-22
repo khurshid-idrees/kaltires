@@ -11,6 +11,7 @@ import {
   AboutContainerPara,
   AboutContainerButton,
   AboutContainerImageContent,
+  AboutContainerSubHeading1,
   AboutContainerImage,
   ContentTextContainer,
   TextContainer,
@@ -40,22 +41,22 @@ export default function Post({ post }) {
   //   console.log(`description h ye${discription}`);
   //   console.log(`description h ye${trimmedString}`);
   return (
-    <ListBlogContainer>
-      <AboutContainerContent>
-        <Link to={`/post/${post._id}`} descs={post.desc}>
-          <AboutContainerImageContent>
-            <img src={post.photo} alt="" />
-          </AboutContainerImageContent>
-        </Link>
+    <AboutContainerContent>
+      <AboutContainerButton to={`/post/${post._id}`} descs={post.desc}>
+        <AboutContainerImageContent>
+          <img src={post.photo} alt="" />
+        </AboutContainerImageContent>
+
         <AboutContainerTextContent>
           <AboutContainerHeading>
             {new Date(post.createdAt).toDateString()}
           </AboutContainerHeading>
-          <AboutContainerSubHeading>{post.title}</AboutContainerSubHeading>
-          <AboutContainerPara>{discription[0]}</AboutContainerPara>
+          <AboutContainerSubHeading1>{post.title}</AboutContainerSubHeading1>
         </AboutContainerTextContent>
-      </AboutContainerContent>
-      {/* <OneListBlogContainer>
+      </AboutContainerButton>
+    </AboutContainerContent>
+
+    /* <OneListBlogContainer>
         <OneListBlogImageContent>
           <img src={post.photo} alt="" />
         </OneListBlogImageContent>
@@ -65,8 +66,8 @@ export default function Post({ post }) {
         <Link to={`/post/${post._id}`} descs={post.desc}>
           <OLBCHeadingContainer>{post.title}</OLBCHeadingContainer>
         </Link>
-      </OneListBlogContainer> */}
-    </ListBlogContainer>
+      </OneListBlogContainer> */
+
     // <AboutContainer id="About">
     //   <AboutContainerContent>
     //     <AboutContainerImageContent>

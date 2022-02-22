@@ -1,22 +1,22 @@
 import { FaBars } from 'react-icons/fa';
-import {  Link as LinkR } from 'react-router-dom';
-import {Link as LinkS} from 'react-scroll';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-background-color: ${({scrollNav})=>(scrollNav?'#000':'transparent')}; 
-  
+  background-color: ${({ scrollNav, bg }) => (bg ? 'transparent' : '#000')};
+
   height: 80px;
-//  margin-top:-80px
-width : 100%;
-margin-top: 40px;
+  //  margin-top:-80px
+  width: 100%;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   position: fixed;
 
-  top:0;
+  top: 0;
   z-index: 29;
   // padding: 0.5rem calc((100vw - 1000px) / 2);
   @media screen and (max-width: 768px) {
@@ -29,26 +29,26 @@ margin-top: 40px;
   /* justify-content: flex-start; */
 `;
 export const NavbarContainer = styled.div`
-display : flex;
-justify-content: space-between;
-height: 80px;
-z-index: 1;
-width: 100%;
-padding: 0 24px;    
-max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1100px;
 `;
 export const NavLogo = styled(LinkR)`
-color : #fff;
-justify-self: flex-start;
-cursor: pointer;
-justify-content: space-around;
-font-size: 1.5rem;
-display: flex;
-align-items: center;
-margin-left: 2px;
-font-weight: bold;
-text-decoration: none;
-&.active{
+  color: #fff;
+  justify-self: flex-start;
+  cursor: pointer;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
+  font-weight: bold;
+  text-decoration: none;
+  &.active {
     color: #010101;
   }
 `;
@@ -57,82 +57,79 @@ export const NavLink = styled(LinkR)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  &.active{
+  &.active {
     color: #010101;
   }
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     color: #900;
-  };
+  }
   &.active {
     color: #15cdfc;
-  };
+  }
   @media screen and (max-width: 768px) {
-  dispaly: none;
-}
+    dispaly: none;
+  }
 `;
 export const MobileIcon = styled.div`
-display: none;
-@media screen and (max-width: 768px) { 
-   display : block; 
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
 
-postion: absolute;
-right: 0;
-top: 0;
-transform: translate(-100%, 60%);
-font-size: 1.8rem ; 
-cursor: pointer;
-color: #fff;
-&.active{
-    color: #010101;
+    postion: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+    &.active {
+      color: #010101;
+    }
   }
-}
 `;
 export const NavMenu = styled.ul`
-display: flex;
-align-items: center;
-list-style: none;
-text-align: center;
-margin-right: -1px;
-@media screen and (max-width: 768px) {
-  dispaly: none;
-}
-` 
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: -1px;
+  @media screen and (max-width: 768px) {
+    dispaly: none;
+  }
+`;
 
 export const NavItem = styled.li`
-display: block;
-    height: 80px;
-    &:hover{
-      
+  display: block;
+  height: 80px;
+  &:hover {
     color: #900;
-  };
+  }
   @media screen and (max-width: 768px) {
     display: none;
-}
-  
-`
-export const NavLinks = styled(LinkS)`
-color: #fff;
-display: flex;
-align-items: center;
-text-decoration: none;
-padding: 0 1rem;
-height: 100%;
-cursor: pointer;
-&.active{
-    color: #ED1C24;
   }
-&:hover{
-    color: #ED1C24;
-  };
-&.active {
- border-bottom: 3px solid #15cdfc;
-}
-
-`
+`;
+export const NavLinks = styled(LinkS)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  &.active {
+    color: #ed1c24;
+  }
+  &:hover {
+    color: #ed1c24;
+  }
+  &.active {
+    border-bottom: 3px solid #15cdfc;
+  }
+`;
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
@@ -145,9 +142,9 @@ export const Bars = styled(FaBars)`
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
-    &.active{
-    color: #010101;
-  }
+    &.active {
+      color: #010101;
+    }
   }
 `;
 
@@ -171,9 +168,6 @@ export const Bars = styled(FaBars)`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
- 
-
- 
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -182,7 +176,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: #ED1C24;
+  background: #ed1c24;
   padding: 10px 22px;
   white-space: nowrap;
   padding: 10px 22px;
@@ -190,7 +184,7 @@ export const NavBtnLink = styled(LinkR)`
   color: #fff;
   outline: none;
   border: none;
-  
+
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;

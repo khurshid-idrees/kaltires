@@ -1,25 +1,134 @@
 import TiresWareHouse from '../../images/TireWarehouse.jpeg';
 import Post from '../Post';
+import ReactLoading from 'react-loading';
+import styled from 'styled-components';
+import React, { useState, useEffect } from 'react';
+
+import axios from 'axios';
 
 import {
   AboutContainerSubHeading,
   AboutContainer,
+  BlogContainer1Content,
+  Containerorlist,
+  BlogContainer1EContent,
+  BlogHero,
 } from './BlogComponentElements';
-export default function BlogPageComponent({ posts }) {
+import {
+  AboutContainerContent1,
+  AboutContainerTextContent1,
+  AboutContainerHeading,
+  AboutContainerPara,
+  AboutContainerButton,
+  AboutContainerContentrow1,
+  AboutContainerImageContent1,
+  AboutContainerImageContent3,
+} from './../Post/PostElement';
+const center = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+`;
+const ContainerCener = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+const Posts = styled.div`
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+export default function BlogPageComponent() {
+  const [posts, setPosts] = useState([]);
+  const [done, setDone] = useState(undefined);
+  const [post1, setPost1] = useState([]);
+  const maaxstring = 200;
+  const x = 0;
+
+  const discription = [];
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const res = await axios.get(
+        'https://kaltireblogs.herokuapp.com/api/posts'
+      );
+      setPosts(res.data);
+      setPost1(res.data[0]);
+      setDone(true);
+    };
+
+    fetchPosts();
+  }, []);
+  if (done === true) {
+    const desc = post1.desc;
+
+    console.log(desc);
+    for (let i = 1; i < 4; i++) {
+      var init = maaxstring * i + 1;
+      if (i === 1) {
+        init = 0;
+      }
+      var trimmedString = desc.toString().substr(x + init, maaxstring * i);
+      discription.push(trimmedString);
+    }
+  }
+
   return (
     <>
       <AboutContainer>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <AboutContainerSubHeading>Blogs</AboutContainerSubHeading>
-        {posts.map((p) => (
-          <Post post={p}></Post>
-        ))}
+        <BlogContainer1Content>
+          <ContainerCener>
+            <AboutContainerContentrow1>
+              <AboutContainerImageContent1>
+                <img src={post1.photo} alt="" />
+              </AboutContainerImageContent1>
+
+              <AboutContainerTextContent1>
+                <AboutContainerHeading>
+                  {new Date(post1.createdAt).toDateString()}
+                </AboutContainerHeading>
+                <AboutContainerSubHeading>
+                  {post1.title}
+                </AboutContainerSubHeading>
+                <AboutContainerPara>{discription[0]}</AboutContainerPara>
+              </AboutContainerTextContent1>
+            </AboutContainerContentrow1>
+          </ContainerCener>
+        </BlogContainer1Content>
+        <Containerorlist>
+          <BlogContainer1EContent>
+            <AboutContainerPara>{discription[1]}</AboutContainerPara>
+            <AboutContainerImageContent3>
+              <img src={post1.photo} alt="" />
+            </AboutContainerImageContent3>
+            <AboutContainerPara>{discription[2]}</AboutContainerPara>
+          </BlogContainer1EContent>
+
+          {!done ? (
+            <center>
+              <ReactLoading
+                type="spin"
+                color="#0076C8"
+                height={100}
+                width={50}
+              />
+            </center>
+          ) : (
+            <Posts>
+              <AboutContainerHeading>RECENT BLOGS</AboutContainerHeading>
+              {posts.map((p) => (
+                <Post post={p} key={p.title}></Post>
+              ))}
+            </Posts>
+          )}
+        </Containerorlist>
       </AboutContainer>
 
       {/* <contentContainer>

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { FaBars } from "react-icons/fa";
-import logo from "../../images/logo.png";
-import { IconContext } from "react-icons/lib";
-import { animateScroll as scroll, Link } from "react-scroll";
+import React, { useEffect, useState } from 'react';
+import { FaBars } from 'react-icons/fa';
+import logo from '../../images/logo.png';
+import { IconContext } from 'react-icons/lib';
+import { animateScroll as scroll, Link } from 'react-scroll';
 
 import {
   Nav,
@@ -15,11 +15,13 @@ import {
   MobileIcon,
   NavItem,
   NavLinks,
-} from "./NavbarElements";
+} from './NavbarElements';
 
-const Navbar = ({ toggle, Speed }) => {
+const Navbar = ({ toggle, Speed, bg }) => {
   const [scrollNav, setScrollNav] = useState(false);
+  const [bgNav, setbglNav] = useState(false);
   console.log(Speed);
+
   const changeNav = () => {
     // if (Speed) {
     //   setScrollNav(false);
@@ -31,15 +33,16 @@ const Navbar = ({ toggle, Speed }) => {
     }
   };
   useEffect(() => {
-    window.addEventListener("scroll", changeNav);
+    setbglNav(bg);
+    window.addEventListener('scroll', changeNav);
   }, []);
   const toggleHome = () => {
     scroll.scrollToTop();
   };
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff", size: "1em" }}>
-        <Nav scrollNav={scrollNav}>
+      <IconContext.Provider value={{ color: '#fff', size: '1em' }}>
+        <Nav bg={bg}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
               <img src={logo} alt="logo" />
@@ -48,74 +51,64 @@ const Navbar = ({ toggle, Speed }) => {
             {/* <Bars onClick={toggle}/> */}
             <NavMenu>
               <NavItem>
-                <NavLinks>
-                  <Link
-                    to="Home"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact={true}
-                    offset={-80}
-                  >
-                    Home
-                  </Link>
+                <NavLinks
+                  to={bg ? '/' : 'Home'}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                  offset={-80}
+                >
+                  Home
                 </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks>
-                  <Link
-                    to="About"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact={true}
-                    offset={-80}
-                  >
-                    Who We Are
-                  </Link>
+                <NavLinks
+                  to={bg ? '/' : 'About'}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                  offset={-80}
+                >
+                  Who We Are
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks>
-                  <Link
-                    to="Products"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact={true}
-                    offset={-80}
-                  >
-                    What We Offer
-                  </Link>
+                <NavLinks
+                  to="Products"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                  offset={-80}
+                >
+                  What We Offer
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks>
-                  <Link
-                    to="Advantages"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact={true}
-                    offset={-80}
-                  >
-                    Why Choose Us
-                  </Link>
+                <NavLinks
+                  to="Advantages"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                  offset={-80}
+                >
+                  Why Choose Us
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLink to="blogPage">
-                  <Link
-                    to="blogPage"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact={true}
-                    offset={-80}
-                  >
-                    BlogPage
-                  </Link>
+                <NavLink
+                  to="blogs"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                  offset={-80}
+                >
+                  Blogs
                 </NavLink>
               </NavItem>
               {/* <NavItem>
@@ -134,7 +127,7 @@ const Navbar = ({ toggle, Speed }) => {
             </NavMenu>
             <NavBtn>
               <NavBtnLink to="Contact Us">
-                {" "}
+                {' '}
                 <Link
                   to="ContactUs"
                   smooth={true}
