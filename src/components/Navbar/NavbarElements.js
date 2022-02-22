@@ -4,7 +4,7 @@ import { Link as LinkS } from 'react-scroll';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background-color: ${({ scrollNav, bg }) => (bg ? 'transparent' : '#000')};
+  background-color: ${({ scrollNav, bg }) => '#000'};
 
   height: 80px;
   //  margin-top:-80px
@@ -174,7 +174,7 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled.a`
   border-radius: 50px;
   background: #ed1c24;
   padding: 10px 22px;
@@ -191,10 +191,16 @@ export const NavBtnLink = styled(LinkR)`
 
   /* Second Nav */
   margin-left: 24px;
-
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
+    a {
+      color: #010606;
+    }
   }
 `;

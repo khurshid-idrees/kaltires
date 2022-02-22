@@ -48,7 +48,7 @@ const FooterSection = ({ isOpen, toggle }) => {
                 </SocialMediaActions>
                 Call us
               </FotterContactName>
-              <FotterContactName>+800-808-0025</FotterContactName>
+              <FotterContactName>(800) 808-0025</FotterContactName>
             </FotterContactlist>
           </FotterContact>
           {/* <hr align="left" width="100%"></hr> */}

@@ -140,6 +140,20 @@ const Navbar = ({ toggle, Speed, bg }) => {
                 </Link>
               </NavBtnLink>
             </NavBtn>
+            <NavBtn>
+              <NavBtnLink>
+                <a
+                  href="/Credit"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                  offset={-80}
+                >
+                  Credit
+                </a>
+              </NavBtnLink>
+            </NavBtn>
             {/* <MobileIcon onClick={toggle}>
           <FaBars/>
         </MobileIcon> */}

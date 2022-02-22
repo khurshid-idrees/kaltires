@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import SinglePost from './components/SinglePost';
 import Bloglist from './components/Bloglist';
+import { Credit } from './pages/Credit';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/blogs" component={Bloglist} />
         <Route path="/post/:postId" component={SinglePost}></Route>
         <Route path="/bloglist" component={BlogPage}></Route>
+        <Route path="/Credit" component={Credit}></Route>
         <Route path="*" component={NotFoundPage} />
       </Switch>
 
