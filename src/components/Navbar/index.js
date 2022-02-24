@@ -121,39 +121,39 @@ const Navbar = ({ toggle, Speed, bg }) => {
               <MobileIcon onClick={toggle}>
                 <FaBars />
               </MobileIcon>
-
+              <NavBtn>
+                <NavBtnLink to="Contact Us">
+                  {' '}
+                  <Link
+                    to="ContactUs"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact={true}
+                    offset={-80}
+                  >
+                    Contact Us
+                  </Link>
+                </NavBtnLink>
+              </NavBtn>
+              <NavBtn>
+                <NavBtnLink href="/Credit">
+                  <a
+                    href="/Credit"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact={true}
+                    offset={-80}
+                  >
+                    Credit Application
+                  </a>
+                </NavBtnLink>
+              </NavBtn>
               {/* Second Nav */}
               {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
             </NavMenu>
-            <NavBtn>
-              <NavBtnLink to="Contact Us">
-                {' '}
-                <Link
-                  to="ContactUs"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact={true}
-                  offset={-80}
-                >
-                  Contact Us
-                </Link>
-              </NavBtnLink>
-            </NavBtn>
-            <NavBtn>
-              <NavBtnLink href="/Credit">
-                <a
-                  href="/Credit"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact={true}
-                  offset={-80}
-                >
-                  Credit
-                </a>
-              </NavBtnLink>
-            </NavBtn>
+
             {/* <MobileIcon onClick={toggle}>
           <FaBars/>
         </MobileIcon> */}

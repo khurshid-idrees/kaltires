@@ -96,6 +96,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  width: 100%;
   margin-right: -1px;
   @media screen and (max-width: 768px) {
     dispaly: none;
@@ -180,7 +181,7 @@ export const NavBtnLink = styled.a`
   padding: 10px 22px;
   white-space: nowrap;
   padding: 10px 22px;
-  font-size: 16px;
+  font-size: 12px;
   color: #fff;
   outline: none;
   border: none;
