@@ -20,7 +20,7 @@ export const WWOContainer = styled.div`
 `;
 export const WWOHeding = styled.h1`
   z-index: 0;
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -37,7 +37,7 @@ export const WWOHeding = styled.h1`
   }
 `;
 export const WWOSubHeding = styled.p`
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 35px;
@@ -100,7 +100,7 @@ export const WWOCardContent = styled.div`
   align-items: center;
   justify-content: center;
   padding: 50px;
-
+  height: 40vh;
   @media screen and (max-width: 768px) {
     width: 100%;
     padding: 30px;
@@ -123,10 +123,10 @@ export const WWOCardimage = styled.div`
 
 export const WWOCCHeading = styled.h2`
   z-index: 10;
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 32px;
 
   color: #3d3d3d;
 
@@ -139,7 +139,7 @@ export const WWOCCHeading = styled.h2`
 `;
 export const WWOCCParagraph = styled.p`
   margin-top: 4px;
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;

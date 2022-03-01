@@ -1,146 +1,137 @@
 import { FaBars } from 'react-icons/fa';
-import {  Link as LinkR } from 'react-router-dom';
-import {Link as LinkS} from 'react-scroll';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 import styled from 'styled-components';
 
 export const WCUContainer = styled.div`
- background: #ffff;
-display:flex;
-flex-direction: column;
-align-items: center;
+  background: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-width: 100%;
-height: auto;
-`
+  width: 100%;
+  height: auto;
+`;
 export const WCUHeding = styled.h1`
+  z-index: 10;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
 
-z-index: 10;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
+  text-align: center;
 
-text-align: center;
+  color: #ed1c24;
 
-color: #ED1C24;
-
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 10px;
-}
-@media screen and (max-width: 480px) {
+  }
+  @media screen and (max-width: 480px) {
     font-size: 12px;
-}
-`
+  }
+`;
 
 export const WCUSubHeding = styled.p`
-margin-top: 24px;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 35px;
+  margin-top: 24px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
 
-text-align: center;
+  text-align: center;
 
-color: #000;
-max-width: 20rem;
-@media screen and (max-width: 768px) {
+  color: #000;
+  max-width: 20rem;
+  @media screen and (max-width: 768px) {
     font-size: 24px;
-}
-@media screen and (max-width: 480px) {
+  }
+  @media screen and (max-width: 480px) {
     font-size: 18px;
-}
-`
+  }
+`;
 
 export const WCUContent = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-padding-top: 90px;
-
-`
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+`;
 
 export const WCUCardContainer = styled.div`
-display: flex;
-flex-direction: row;
-align-items: center;
-@media screen and (max-width: 768px) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
-
-`
+`;
 export const BlueDot = styled.div`
-display: block;
-width: 12px;
-height: 12px;
-z-index: 10;
-border-radius: 50%;
-margin-right: 10px;
-background: #0076C8;
- 
-@media screen and (max-width: 768px) {
-   display: none;
+  display: block;
+  width: 12px;
+  height: 12px;
+  z-index: 10;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #0076c8;
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
-
-`
+`;
 export const BluedotContainer = styled.div`
-display: flex;
-flex-direction: row;
-align-items: center;
-
-`
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
 
 export const GroupContent = styled.div`
-display: flex;
-flex-direction:column;
-align-items: flex-start;
-@media screen and (max-width: 768px) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
-
-`
+`;
 
 export const WCUCard = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
     @media screen and (max-width: 768px) {
-    width: 100%;
+      width: 100%;
+    }
   }
-}
-`
+`;
 
 export const WCUCardContent = styled.div`
-display: flex;
-flex-direction: row;
-align-items: center;
-align-items: flex-start;
-padding: 80px 90px 80px 90px;
-
-`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-items: flex-start;
+  padding: 80px 90px 80px 90px;
+`;
 
 export const WCUCHeading = styled.h2`
-z-index: 10;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 42px;
-padding: 10px 20px 10px 20px;
-color: #3D3D3D;
+  z-index: 10;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 42px;
+  padding: 10px 20px 10px 20px;
+  color: #3d3d3d;
 
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 30px;
-}
-@media screen and (max-width: 480px) {
+  }
+  @media screen and (max-width: 480px) {
     font-size: 20px;
-}
-`
+  }
+`;
 // export const WCUCParagraph = styled.p`
 // margin-top: 4px;
-// font-family: Roboto;
+// font-family: sans-serif;
 // font-style: normal;
 // font-weight: normal;
 // font-size: 18px;
@@ -148,7 +139,6 @@ color: #3D3D3D;
 // text-align: justify;
 // width: 50%;
 // color: #727272;
-
 
 // max-width: 60rem;
 // @media screen and (max-width: 768px) {
@@ -171,7 +161,7 @@ color: #3D3D3D;
 //   color: #fff;
 //   outline: none;
 //   border: none;
-  
+
 //   cursor: pointer;
 //   transition: all 0.2s ease-in-out;
 //   text-decoration: none;

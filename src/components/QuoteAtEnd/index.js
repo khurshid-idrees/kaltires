@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 import {
   WWOCArd,
   WWOCardContent,
   WWOCCHeading,
   WWOCCParagraph,
   WWOCCButton,
-} from "./QuoteAtEndElements";
-import { Link } from "react-scroll";
+} from './QuoteAtEndElements';
+import { Link } from 'react-scroll';
 
 const QuoteAtEnd = ({ isOpen, toggle }) => {
   return (
@@ -21,17 +21,8 @@ const QuoteAtEnd = ({ isOpen, toggle }) => {
           Effective solution. You can call, email or find us directly at our
           place.
         </WWOCCParagraph>
-        <WWOCCButton>
-          <Link
-            to="Footertag"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact={true}
-            offset={-80}
-          >
-            24/7 COMMERCIAL ROADSIDE SERVICE - CALL NOW
-          </Link>
+        <WWOCCButton href="tel:800-808-0025">
+          24/7 COMMERCIAL ROADSIDE SERVICE - CALL NOW
         </WWOCCButton>
       </WWOCardContent>
     </WWOCArd>

@@ -11,7 +11,7 @@ export const AboutContainer = styled.div`
   height: auto;
 `;
 export const AboutContainerSubHeading = styled.h2`
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   zindex: 1;
   font-weight: bold;
@@ -48,7 +48,7 @@ export const BlogContainer1EContent = styled.div`
 `;
 export const AboutContainerPara = styled.p`
   margin-top: 4px;
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;

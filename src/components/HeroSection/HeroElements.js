@@ -24,7 +24,7 @@ height: 100%;
 
 overflow: hidden;
 
-`
+`;
 // export const BgImage = Styled.div`
 // width: 100%;
 // height: 100%;
@@ -45,7 +45,7 @@ height: 100%;
 object-fit: cover;
 
 background: #232a34;
-`
+`;
 export const HeroContent = Styled.div`
 
 
@@ -64,10 +64,10 @@ margin-top: -200px;
 
 
 
-`
+`;
 export const HeroH1 = Styled.h1`
 
-font-family: Roboto;
+font-family: sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 36px;
@@ -82,10 +82,10 @@ color: #ED1C24;
 @media screen and (max-width: 480px) {
     font-size: 32px;
 }
-`
+`;
 export const HeroP = Styled.p`
 margin-top: 24px;
-font-family: Roboto;
+font-family: sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 65px;
@@ -100,14 +100,14 @@ max-width: 60rem;
 @media screen and (max-width: 480px) {
     font-size: 22px;
 }
-`
+`;
 export const HeroBtnWrapper = Styled.div`
 margin-top: 32px;
 display: flex;
 z-index: 2;
 flex-direction: column;
 align-items: center;
-`
+`;
 export const HeroPromoContainer = Styled.div`
 z-index: 10;
 display: flex;
@@ -124,9 +124,9 @@ align-items: center;
     margin-top: 550px;
     
 };
-`
+`;
 export const HeroPromo = Styled.div`
 padding: 20px;
 z-index: 2;
 display:block;
-`
+`;

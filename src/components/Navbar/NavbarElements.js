@@ -131,6 +131,24 @@ export const NavLinks = styled(LinkS)`
     border-bottom: 3px solid #15cdfc;
   }
 `;
+export const NavLinksR = styled(LinkR)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  &.active {
+    color: #ed1c24;
+  }
+  &:hover {
+    color: #ed1c24;
+  }
+  &.active {
+    border-bottom: 3px solid #15cdfc;
+  }
+`;
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;

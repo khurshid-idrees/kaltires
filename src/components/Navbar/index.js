@@ -52,7 +52,7 @@ const Navbar = ({ toggle, Speed, bg }) => {
             <NavMenu>
               <NavItem>
                 <NavLinks
-                  to={bg ? '/' : 'Home'}
+                  to={Speed ? '/' : 'Home'}
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -65,7 +65,7 @@ const Navbar = ({ toggle, Speed, bg }) => {
 
               <NavItem>
                 <NavLinks
-                  to={bg ? '/' : 'About'}
+                  to={Speed ? '/' : 'About'}
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -107,6 +107,7 @@ const Navbar = ({ toggle, Speed, bg }) => {
                   spy={true}
                   exact={true}
                   offset={-80}
+                  target="_blank"
                 >
                   Blogs
                 </NavLink>

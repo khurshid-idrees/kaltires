@@ -6,8 +6,10 @@
   margin: 0;
   padding: 0;
   font-family: 'Encode Sans Ecpanded', sans-serif;
-  overflow-x: hidden;
 }
 .Margin-bottom {
   margin-bottom: 20px;
+}
+body {
+  overflow-x: hidden;
 }

@@ -1,7 +1,7 @@
-import { FaBars } from "react-icons/fa";
-import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
-import styled from "styled-components";
+import { FaBars } from 'react-icons/fa';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
+import styled from 'styled-components';
 
 export const AboutContainer = styled.div`
   background: #fff;
@@ -98,7 +98,7 @@ margin-top: -8%; */
   }
 `;
 export const AboutContainerHeading = styled.div`
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -114,7 +114,7 @@ export const AboutContainerHeading = styled.div`
   }
 `;
 export const AboutContainerSubHeading = styled.h2`
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -131,7 +131,7 @@ export const AboutContainerSubHeading = styled.h2`
 `;
 export const AboutContainerPara = styled.p`
   margin-top: 4px;
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;

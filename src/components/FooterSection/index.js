@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa';
 import { FiPhoneCall } from 'react-icons/fi';
-import { GrMapLocation } from 'react-icons/gr';
+import { FaMapMarkedAlt } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import {
   FooterContainer,
@@ -30,11 +30,14 @@ const FooterSection = ({ isOpen, toggle }) => {
           <FotterContact>
             <FotterContactlist>
               <FotterContactName>
-                <SocialMediaActions>
-                  <AiOutlineMail />
-                </SocialMediaActions>{' '}
+                <a href="mailto:info@kaltires.com">
+                  <SocialMediaActions>
+                    <AiOutlineMail />
+                  </SocialMediaActions>
+                </a>{' '}
                 Email us
               </FotterContactName>
+
               <FotterContactNo>info@kaltires.com</FotterContactNo>
             </FotterContactlist>
           </FotterContact>
@@ -43,9 +46,11 @@ const FooterSection = ({ isOpen, toggle }) => {
             <FotterContactlist>
               <FotterContactName>
                 {' '}
-                <SocialMediaActions>
-                  <FiPhoneCall />
-                </SocialMediaActions>
+                <a href="tel:800-808-0025">
+                  <SocialMediaActions>
+                    <FiPhoneCall />
+                  </SocialMediaActions>
+                </a>
                 Call us
               </FotterContactName>
               <FotterContactName>(800) 808-0025</FotterContactName>
@@ -55,9 +60,12 @@ const FooterSection = ({ isOpen, toggle }) => {
           <FotterContact>
             <FotterContactlist>
               <FotterContactName>
-                <SocialMediaActions>
-                  <GrMapLocation />
-                </SocialMediaActions>
+                {' '}
+                <a href="https://www.google.com/maps/place/10156+Live+Oak+Ave,+Fontana,+CA+92335,+USA/@34.0685188,-117.4825613,17z/data=!3m1!4b1!4m5!3m4!1s0x80c34b3fc6e50489:0xde8aefe027f7319!8m2!3d34.0685144!4d-117.4803726">
+                  <SocialMediaActions>
+                    <FaMapMarkedAlt />
+                  </SocialMediaActions>
+                </a>
                 Find us
               </FotterContactName>
               <FotterContactNo>

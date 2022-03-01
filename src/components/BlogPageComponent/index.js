@@ -24,6 +24,7 @@ import {
   AboutContainerImageContent1,
   AboutContainerImageContent3,
 } from './../Post/PostElement';
+
 const center = styled.div`
   display: flex;
   justify-content: center;
@@ -78,6 +79,11 @@ export default function BlogPageComponent() {
       discription.push(trimmedString);
     }
   }
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <>

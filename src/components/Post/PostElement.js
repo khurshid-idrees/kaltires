@@ -195,7 +195,7 @@ margin-top: -8%; */
   }
 `;
 export const AboutContainerHeading = styled.div`
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: bold;
   font-weight: bold;
   margin-top: 10rem;
@@ -212,7 +212,7 @@ export const AboutContainerHeading = styled.div`
   }
 `;
 export const AboutContainerSubHeading = styled.h2`
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -228,7 +228,7 @@ export const AboutContainerSubHeading = styled.h2`
   }
 `;
 export const AboutContainerSubHeading1 = styled.h2`
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -244,7 +244,7 @@ export const AboutContainerSubHeading1 = styled.h2`
 `;
 export const AboutContainerPara = styled.p`
   margin-top: 4px;
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;

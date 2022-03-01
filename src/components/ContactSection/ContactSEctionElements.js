@@ -1,97 +1,92 @@
 import { FaBars } from 'react-icons/fa';
-import {  Link as LinkR } from 'react-router-dom';
-import {Link as LinkS} from 'react-scroll';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 import styled from 'styled-components';
 import bgimage from '../../images/ContactTire.png';
 export const ContactContainer = styled.div`
- background: #fff;
-display:flex;
-flex-direction: row;
-align-items: center;
-padding: 50px;
-width: 100%;
-height: auto;
-&:active{
-    
-}
-`
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px;
+  width: 100%;
+  height: auto;
+  &:active {
+  }
+`;
 export const WWOHeding = styled.h1`
-z-index: 0;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
+  z-index: 0;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
 
-text-align: center;
+  text-align: center;
 
-color: #ED1C24;
+  color: #ed1c24;
 
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 20px;
-}
-@media screen and (max-width: 480px) {
+  }
+  @media screen and (max-width: 480px) {
     font-size: 18px;
-}
-`
+  }
+`;
 export const ContactForm = styled.div`
-/* display: flex;
+  /* display: flex;
 flex-direction: column;
 align-items: flex-start; */
 
-width: 50%;
-@media screen and (max-width: 768px) {
+  width: 50%;
+  @media screen and (max-width: 768px) {
     width: 100%;
-  
-}
-`
+  }
+`;
 export const ContactImage = styled.div`
-display: block;
-width: 20%;
-@media screen and (max-width: 768px) {
-  
-  display: none;
-}
-`
+  display: block;
+  width: 20%;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 export const AboutContainerHeading = styled.div`
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 42px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 42px;
+  color: #ed1c24;
 
-color: #ED1C24;
-
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 20px;
-}
-@media screen and (max-width: 480px) {
+  }
+  @media screen and (max-width: 480px) {
     font-size: 15px;
-}
-`
+  }
+`;
 export const AboutContainerSubHeading = styled.h2`
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 42px;
+  color: #010101;
 
-color: #010101;
-
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 20px;
-}
-@media screen and (max-width: 480px) {
+  }
+  @media screen and (max-width: 480px) {
     font-size: 15px;
-}
-`
+  }
+`;
 export const WWOCCButton = styled(LinkR)`
-padding: 25px;
-display: block;
+  padding: 25px;
+  display: block;
   display: flex;
-    justify-content: center;
-  background: #ED1C24;
+  justify-content: center;
+  background: #ed1c24;
   padding: 10px 22px;
   white-space: nowrap;
   padding: 20px 92px;
@@ -99,7 +94,7 @@ display: block;
   color: #fff;
   outline: none;
   border: none;
-  
+
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
@@ -114,5 +109,5 @@ display: block;
   }
   @media screen and (max-width: 768px) {
     display: block;
-}
+  }
 `;
