@@ -94,6 +94,9 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
+  align-items: flex-start;
+  justify-content: flex-end;
+
   list-style: none;
   text-align: center;
   width: 100%;

@@ -10,7 +10,7 @@ export const FooterContainer = styled.div`
   align-items: center;
 
   width: 100%;
-  height: 50vh;
+  height: 40vh;
 `;
 export const footerMobileContainer = styled.div`
   display: flex;

@@ -13,6 +13,7 @@ z-index: 1;
 `;
 export const HeroBg = Styled.div`
 background: transparent url(${bgimage}) no-repeat center center;
+background-size: cover;
 position: absolute;
 z-index: 2;
 top: 0;

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   WCUContainer,
   BluedotContainer,
@@ -14,8 +14,8 @@ import {
   WCUCParagraph,
   WCUCButton,
   GroupContent,
-} from "./WCUSectionElement";
-import TireFeaturing from "../../images/WCUTire.png";
+} from './WCUSectionElement';
+import TireFeaturing from '../../images/WCUTire.png';
 
 const WCUSection = ({ isOpen, toggle }) => {
   return (

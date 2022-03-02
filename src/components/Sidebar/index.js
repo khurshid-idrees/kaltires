@@ -75,6 +75,18 @@ const Sidebar = ({ isOpen, toggle }) => {
             Contact Us
           </SidebarLink>
         </SideBtnWrap>
+        <SideBtnWrap>
+          <a
+            href="Credit"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact={true}
+            offset={-80}
+          >
+            Credit Application
+          </a>
+        </SideBtnWrap>
       </SidebarWrapper>
     </SlidebarContainer>
   );

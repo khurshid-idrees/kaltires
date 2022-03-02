@@ -59,6 +59,7 @@ export const WCUContent = styled.div`
 
 export const WCUCardContainer = styled.div`
   display: flex;
+
   flex-direction: row;
   align-items: center;
   @media screen and (max-width: 768px) {
@@ -95,6 +96,7 @@ export const GroupContent = styled.div`
 
 export const WCUCard = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   img {

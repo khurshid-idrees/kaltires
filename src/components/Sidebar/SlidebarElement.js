@@ -32,6 +32,10 @@ export const Icon = styled.div`
 `;
 export const SidebarWrapper = styled.div`
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 export const SidebarMenu = styled.ul`
   display: grid;
@@ -59,7 +63,38 @@ export const SidebarLink = styled(LinkS)`
 `;
 export const SideBtnWrap = styled.div`
   display: flex;
+  margin-top: 2rem;
   justify-content: center;
+  align-items: center;
+  width: 60%;
+  border-radius: 50px;
+  background: #ed1c24;
+  padding: 10px 22px;
+  white-space: nowrap;
+  padding: 10px 22px;
+  font-size: 12px;
+  color: #fff;
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  /* Second Nav */
+  margin-left: 24px;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+    a {
+      color: #010606;
+    }
+  }
 `;
 export const SidebarRoute = styled(LinkR)`
   display: flex;
