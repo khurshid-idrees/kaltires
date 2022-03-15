@@ -76,7 +76,6 @@ const Heading = styled.a`
   }
   h1 {
     font-size: 1.5rem;
-    margin-right: 1rem;
   }
 `;
 const OfficeHeading = styled.div`
@@ -95,7 +94,9 @@ const MapInside = styled.div`
     height: 40% !important;
   }
 `;
-const Address = styled.div``;
+const Address = styled.div`
+  margin: 0.2rem;
+`;
 const position = [51.505, -0.09];
 function FlyToStore(office) {
   // const [position, setPosition] = useState(null);
@@ -192,8 +193,9 @@ export default function ContactMap() {
               // }}
             >
               <img src={icon1} alt="" width={25} />
-              <h1>{eachData.properties.name} </h1>
-              <Address>{eachData.properties.address}</Address>
+              <h1>{eachData.properties.name}</h1>,
+              <Address>{eachData.properties.state}</Address>
+              <Address>{eachData.properties.ZipCode}</Address>
             </Heading>
           ))}
           <ul class="list"></ul>
@@ -206,7 +208,6 @@ export default function ContactMap() {
           >
             <TileLayer
               url={`https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=${'pk.eyJ1Ijoic3NvYW0iLCJhIjoiY2wwc2w5dG01MGVrczNsb3BpdzlpMTNpbiJ9.KmtZJcORKZMCerqGFGQUuQ'}`}
-              attribution='Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>'
             />
 
             {officeLists.map((eachData) => (

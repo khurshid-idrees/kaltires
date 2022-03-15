@@ -10,9 +10,9 @@ export const WWOCArd = styled.div`
   align-items: center;
 
   width: 100%;
-  height: 40vh;
+  height: 45vh;
   @media screen and (max-width: 768px) {
-    height: 30vh;
+    height: 35vh;
   }
 `;
 

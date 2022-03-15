@@ -73,7 +73,8 @@ export const WWOCardContainer = styled.div`
   padding-bottom: 90px;
   @media screen and (max-width: 768px) {
     width: 100%;
-    padding: 30px;
+    padding: 0px;
+    margin: 0px;
     flex-direction: column;
     justify-content: center;
   }

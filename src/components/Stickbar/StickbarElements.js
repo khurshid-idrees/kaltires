@@ -1,11 +1,11 @@
 import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { Link as LinkS } from 'react-scroll';
 
 export const SticNav = styled.nav`
-  
-  background: #0076C8;
-  width : 100%;
+  background: #0076c8;
+  width: 100%;
   display: block;
   position: fixed;
   height: 40px;
@@ -20,27 +20,19 @@ export const SticNav = styled.nav`
   /* justify-content: flex-start; */
 `;
 
-export const NavLink = styled.div`
-
-text-align: center;
+export const NavLink = styled(LinkS)`
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  top:0;
-  z-index: 20;
   text-decoration: none;
-  padding: 0 2rem;
+  padding: 0 1rem;
   height: 100%;
-
-  @media screen and (max-width: 960px) {
-    transition: 0.8s all ease;
-  }
-
+  cursor: pointer;
   &.active {
-    color: #FFFFFF;
+    color: #fff;
+  }
+  &:hover {
+    color: #fff;
   }
 `;
 
@@ -60,5 +52,3 @@ export const NavMenu = styled.div`
     display: none;
   }
 `;
-
-

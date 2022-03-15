@@ -28,9 +28,10 @@ export const AboutContainerContent = styled.div`
     width: 80%;
     margin: 0px;
   }
-  @media screen and (max-width: 968px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
     width: 100%;
+    padding: 0px;
     margin: 0px;
   }
 `;

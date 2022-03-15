@@ -112,6 +112,9 @@ export const WCUCardContent = styled.div`
   align-items: center;
   align-items: flex-start;
   padding: 80px 90px 80px 90px;
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+  }
 `;
 
 export const WCUCHeading = styled.h2`
@@ -125,7 +128,9 @@ export const WCUCHeading = styled.h2`
   color: #3d3d3d;
 
   @media screen and (max-width: 768px) {
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 22px;
+    border-bottom: 1px solid #e5e5e5;
   }
   @media screen and (max-width: 480px) {
     font-size: 20px;

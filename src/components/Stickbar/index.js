@@ -1,49 +1,44 @@
 import React from 'react';
-import {
-  SticNav,
-  NavLink,
-  Bars,
-  NavMenu,
- 
-} from './StickbarElements';
+import { SticNav, NavLink, Bars, NavMenu } from './StickbarElements';
 
 const Stickbar = () => {
   return (
     <>
       <SticNav>
-  
-     
         <NavMenu>
-
-          <NavLink to='/' activeStyle>
-          
+          <NavLink to="ContactMap" smooth={true} activeStyle>
+            Fontana
           </NavLink>
-        
-          <NavLink to='/' activeStyle>
-          Indiana
+          <NavLink to="ContactMap" smooth={true} activeStyle>
+            SanMarcos
           </NavLink>
-          <NavLink to='/' activeStyle>
-          California
+          <NavLink to="ContactMap" smooth={true} activeStyle>
+            Arlington
           </NavLink>
-          <NavLink to='/' activeStyle>
-          Texas
+          <NavLink to="ContactMap" smooth={true} activeStyle>
+            Springdale
           </NavLink>
-          <NavLink to='/' activeStyle>
-          Arkansas
+          <NavLink to="ContactMap" smooth={true} activeStyle>
+            Indianapolis
           </NavLink>
-          <NavLink to='/' activeStyle>
-          Georgia
+          <NavLink to="ContactMap" smooth={true} activeStyle>
+            Kansas
           </NavLink>
-          <NavLink to='/' activeStyle>
-          New Jersey
+          <NavLink to="ContactMap" smooth={true} activeStyle>
+            Hampton
           </NavLink>
-          <NavLink to='/' activeStyle>
-          Canada
+          <NavLink to="ContactMap" smooth={true} activeStyle>
+            Bakersfield
+          </NavLink>
+          <NavLink to="ContactMap" smooth={true} activeStyle>
+            Atlanta
+          </NavLink>
+          <NavLink to="ContactMap" smooth={true} activeStyle>
+            Calexico
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
-       
       </SticNav>
     </>
   );
