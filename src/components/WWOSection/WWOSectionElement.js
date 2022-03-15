@@ -5,6 +5,9 @@ import styled from 'styled-components';
 import WWO1 from '../../images/WWO1.png';
 import WWO2 from '../../images/WWO2.png';
 import WWO3 from '../../images/WWO2.png';
+import CommercialTire from '../../images/CommercialTire.png';
+import IndustrialTire from '../../images/IndustrialTire.png';
+import EarthMoverTire from '../../images/EarthMoverTire.png';
 export const WWOContainer = styled.div`
   background: #c1c1c1;
 
@@ -66,6 +69,7 @@ export const WWOCardContainer = styled.div`
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
+  margin: 0px 6rem 0px; 6rem;
   padding-bottom: 90px;
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -76,7 +80,11 @@ export const WWOCardContainer = styled.div`
 `;
 
 export const WWOCArd = styled.div`
-  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
   margin: 10px;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.01);
@@ -95,12 +103,13 @@ export const WWOCArd = styled.div`
 `;
 
 export const WWOCardContent = styled.div`
+  flex: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px;
-  height: 40vh;
+  padding: 20px;
+
   @media screen and (max-width: 768px) {
     width: 100%;
     padding: 30px;
@@ -109,12 +118,13 @@ export const WWOCardContent = styled.div`
 `;
 export const WWOCardimage = styled.div`
   width: 100%;
-
+  height: 250px;
+  background-image: ${(props) => `url(${props.image})`};
+  background-size: cover;
   @media screen and (max-width: 768px) {
     width: 100%;
   }
   img {
-    height: 250px;
     @media screen and (max-width: 768px) {
       width: 100%;
     }
@@ -126,7 +136,7 @@ export const WWOCCHeading = styled.h2`
   font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 1.8rem;
 
   color: #3d3d3d;
 
@@ -142,20 +152,20 @@ export const WWOCCParagraph = styled.p`
   font-family: sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1.1rem;
 
   padding: 22px;
   text-align: justify;
-
+  height: ${(props) => `${props.height}`}rem;
   color: #727272;
-
-  max-width: 60rem;
-  @media screen and (max-width: 768px) {
-    font-size: 20px;
+  @media screen (min-width: 1200px) {
+    font-size: 1rem;
     padding: 1px;
   }
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
+
+  @media screen and (device-width: 480px) and (device-height: 800px) {
+    font-size: 10px;
+    padding: 1px;
   }
 `;
 export const WWOCCButton = styled(LinkR)`

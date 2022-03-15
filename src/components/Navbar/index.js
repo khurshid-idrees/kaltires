@@ -100,6 +100,18 @@ const Navbar = ({ toggle, Speed, bg }) => {
                 </NavLinks>
               </NavItem>
               <NavItem>
+                <NavLinks
+                  to="ContactMap"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                  offset={-80}
+                >
+                  Locations
+                </NavLinks>
+              </NavItem>
+              <NavItem>
                 <NavLink
                   to="blogs"
                   smooth={true}

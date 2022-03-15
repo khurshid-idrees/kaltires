@@ -11,6 +11,7 @@ import WCUSection from '../components/WCUSection';
 import WWOSection from '../components/WWOSection';
 import FooterSection from '../components/FooterSection';
 import Stickbar from '../components/Stickbar';
+import ContactMap from '../components/ContactMap';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,9 @@ const Home = () => {
       {/* <TestimonialSection></TestimonialSection> */}
       <WWOSection></WWOSection>
       <WCUSection></WCUSection>
+      <ContactMap></ContactMap>
       <QuoteAtEnd></QuoteAtEnd>
+
       <ContactSection></ContactSection>
       <FooterSection></FooterSection>
     </>

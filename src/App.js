@@ -11,6 +11,7 @@ import Sidebar from './components/Sidebar';
 import SinglePost from './components/SinglePost';
 import Bloglist from './components/Bloglist';
 import { Credit } from './pages/Credit';
+import ContactMap from './components/ContactMap';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +28,7 @@ function App() {
         <Route path="/post/:postId" component={SinglePost}></Route>
         <Route path="/bloglist" component={BlogPage}></Route>
         <Route path="/Credit" component={Credit}></Route>
+        <Route path="/ContactMap" component={ContactMap}></Route>
         <Route path="*" component={NotFoundPage} />
       </Switch>
 

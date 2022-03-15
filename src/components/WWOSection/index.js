@@ -25,16 +25,16 @@ const WWOSection = ({ isOpen, toggle }) => {
       </WWOContent>
       <WWOCardContainer>
         <WWOCArd>
-          <WWOCardimage>
-            <img
+          <WWOCardimage image={CommercialTire}>
+            {/* <img
               src={CommercialTire}
               alt="Fast Durabel and friendly Lots of Black Tire on Top of Each Other"
-            />
+            /> */}
           </WWOCardimage>
 
           <WWOCardContent>
             <WWOCCHeading>Commercial Tires</WWOCCHeading>
-            <WWOCCParagraph className="Margin-bottom">
+            <WWOCCParagraph className="Margin-bottom" height={10}>
               The Right Tires For Your Fleet. It’s easy to find the right total
               solution for your fleet. With a wide selection of innovative
               commercial truck tires and services to back them up, your fleet
@@ -44,19 +44,19 @@ const WWOSection = ({ isOpen, toggle }) => {
           </WWOCardContent>
         </WWOCArd>
         <WWOCArd>
-          <WWOCardimage>
-            <img
+          <WWOCardimage image={IndustrialTire}>
+            {/* <img
               src={IndustrialTire}
               alt="Industrial Tire Clean Black Solid for loading or excavating, lifting or material handling"
-            />
+            /> */}
           </WWOCardimage>
 
           <WWOCardContent>
             <WWOCCHeading>Industrial Tires</WWOCCHeading>
-            <WWOCCParagraph>
+            <WWOCCParagraph height={11.28}>
               {' '}
               Whether it is loading or excavating, lifting or material handling
-              – you are looking for reliable high-performance tires so that you
+              you are looking for reliable high performance tires so that you
               can do your job in full safety. Browse for your tire, based on
               your specific type of industrial machinery.
             </WWOCCParagraph>
@@ -64,13 +64,13 @@ const WWOSection = ({ isOpen, toggle }) => {
           </WWOCardContent>
         </WWOCArd>
         <WWOCArd>
-          <WWOCardimage>
-            <img src={EarthMoverTire} alt="" />
+          <WWOCardimage image={EarthMoverTire}>
+            {/* <img src={EarthMoverTire} alt="" /> */}
           </WWOCardimage>
 
           <WWOCardContent>
             <WWOCCHeading>Earthmover Tires</WWOCCHeading>
-            <WWOCCParagraph>
+            <WWOCCParagraph height={11.28}>
               {' '}
               Mining and construction are the toughest sectors on Earth. So are
               the requirements for equipment – and tires, of course. Browse for

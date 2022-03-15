@@ -35,7 +35,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 1180px;
 `;
 export const NavLogo = styled(LinkR)`
   color: #fff;
@@ -96,7 +96,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  width: 100%;
+  width: 100vw;
   margin-right: -1px;
   @media screen and (max-width: 768px) {
     dispaly: none;
