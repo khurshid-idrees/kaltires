@@ -3,7 +3,7 @@ import Usa from '@svg-maps/usa';
 import { SVGMap } from 'react-svg-map';
 import 'react-svg-map/lib/index.css';
 import 'leaflet/dist/leaflet.css';
-import covidData from './data.json';
+
 import { Icon } from 'leaflet';
 import icon1 from './images/tires.svg';
 import { statesData } from './data';

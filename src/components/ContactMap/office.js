@@ -117,7 +117,7 @@ export const officeLists = [
     type: 'Feature',
     geometry: {
       type: 'Point',
-      coordinates: [35.39114864843474, -119.03785300309596],
+      coordinates: [35.39141, -119.03792],
     },
     properties: {
       state: 'CA',

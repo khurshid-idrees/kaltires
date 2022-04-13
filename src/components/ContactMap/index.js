@@ -16,7 +16,7 @@ import Usa from '@svg-maps/usa';
 import { CheckboxSVGMap } from 'react-svg-map';
 import 'react-svg-map/lib/index.css';
 import axios from 'axios';
-import covidData from './data.json';
+
 import { Icon, SVG } from 'leaflet';
 import icon1 from './images/tires.svg';
 import {} from './ContactMapElement';
@@ -183,7 +183,7 @@ export default function ContactMap() {
           {officeLists.map((eachData) => (
             <Heading
               key={eachData.id}
-              href={`https://www.google.com/maps/place/${eachData.geometry.coordinates}`}
+              href={`https://www.google.com/maps?t=k&q=loc:${eachData.geometry.coordinates}`}
               target="_blank"
               // click={FlyToStore(Markerwhatever(eachData))}
               // eventHandlers={{

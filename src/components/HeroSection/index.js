@@ -13,7 +13,7 @@ import Michelin from '../../images/Promo2.png';
 import GoodYear from '../../images/Promo3.png';
 import GKTYre from '../../images/promo4.png';
 import BKTGrowingTogether from '../../images/Promo5.png';
-import HanKook from '../../images/Promo6.png';
+import Continental from '../../images/promo8.png';
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
   const onHover = () => {
@@ -38,7 +38,7 @@ const HeroSection = () => {
           <img src={BKTGrowingTogether} alt="Partner Company" />
         </HeroPromo>
         <HeroPromo>
-          <img src={HanKook} alt="Partner Company" />
+          <img src={Continental} alt="Partner Company" width={'225rem'} />
         </HeroPromo>
       </HeroPromoContainer>
     </HeroContainer>
