@@ -99,7 +99,7 @@ export const NavMenu = styled.ul`
   width: 100vw;
   margin-right: -1px;
   @media screen and (max-width: 768px) {
-    dispaly: none;
+    margin-right: 8rem;
   }
 `;
 
