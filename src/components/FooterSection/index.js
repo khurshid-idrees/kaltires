@@ -84,17 +84,18 @@ const FooterSection = ({ isOpen, toggle }) => {
         </FotterNav>
       </footerMobileContainer>
 
-      {/* <FotterSocialMedia>
-            <SocialMediaActions>
-            <FaFacebookF/>
-            </SocialMediaActions>
-            <SocialMediaActions>
-                <FaTwitter/>
-            </SocialMediaActions>
-            <SocialMediaActions>
-                <FaInstagram/>
-            </SocialMediaActions>
-          </FotterSocialMedia> */}
+      <FotterSocialMedia>
+        <SocialMediaActions href="https://www.facebook.com/kalgroupusa/">
+          <FaFacebookF />
+        </SocialMediaActions>
+        {/* <SocialMediaActions>
+          <FaTwitter />
+        </SocialMediaActions> */}
+        <SocialMediaActions href="https://www.instagram.com/kalgroupusa">
+          <FaInstagram />
+        </SocialMediaActions>
+      </FotterSocialMedia>
+
       <FotterContactN>
         © Kal Tires Inc, 2021 All rights reserved.{' '}
       </FotterContactN>

@@ -136,7 +136,7 @@ export const FotterContactN = styled.div`
   font-weight: bold;
   font-size: 20px;
   line-height: 12px;
-  padding: 60px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
   color: #0076c8;
 
   @media screen and (max-width: 768px) {
@@ -154,7 +154,7 @@ export const FotterSocialMedia = styled.div`
   align-items: center;
   justify-content: center;
 `;
-export const SocialMediaActions = styled.div`
+export const SocialMediaActions = styled.a`
   display: flex;
 
   padding-right: 20px;
