@@ -122,6 +122,7 @@ export default function ContactMap() {
   const [posts, setPosts] = useState([]);
   const [done, setDone] = useState(undefined);
   const [post1, setPost1] = useState([]);
+
   const maaxstring = 200;
   const x = 0;
 

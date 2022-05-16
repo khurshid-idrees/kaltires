@@ -15,6 +15,7 @@ import {
   MobileIcon,
   NavItem,
   NavLinks,
+  NavLinksA,
 } from './NavbarElements';
 
 const Navbar = ({ toggle, Speed, bg }) => {
@@ -26,6 +27,7 @@ const Navbar = ({ toggle, Speed, bg }) => {
     // if (Speed) {
     //   setScrollNav(false);
     // }
+
     if (window.scrollY >= 100 || Speed) {
       setScrollNav(true);
     } else {
@@ -33,7 +35,10 @@ const Navbar = ({ toggle, Speed, bg }) => {
     }
   };
   useEffect(() => {
-    setbglNav(bg);
+    if (window.location.pathname == '/Credit') {
+      setbglNav(true);
+      console.log(`set bg nav ${bgNav}`);
+    }
     window.addEventListener('scroll', changeNav);
   }, []);
   const toggleHome = () => {
@@ -64,43 +69,69 @@ const Navbar = ({ toggle, Speed, bg }) => {
               </NavItem>
 
               <NavItem>
-                <NavLinks
-                  to={Speed ? '/' : 'About'}
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact={true}
-                  offset={-80}
-                >
-                  Who We Are
-                </NavLinks>
+                {bgNav ? (
+                  <NavLinksA href="/#About">Who We Are</NavLinksA>
+                ) : (
+                  <NavLinks
+                    to="About"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact={true}
+                    offset={-80}
+                  >
+                    Who We Are
+                  </NavLinks>
+                )}
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="Products"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact={true}
-                  offset={-80}
-                >
-                  What We Offer
-                </NavLinks>
+                {bgNav ? (
+                  <NavLinksA href="/#Products"> What We Offer</NavLinksA>
+                ) : (
+                  <NavLinks
+                    to="Products"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact={true}
+                    offset={-80}
+                  >
+                    What We Offer
+                  </NavLinks>
+                )}
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="Advantages"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact={true}
-                  offset={-80}
-                >
-                  Why Choose Us
-                </NavLinks>
+                {bgNav ? (
+                  <NavLinksA href="/#Advantages">Why Choose Us</NavLinksA>
+                ) : (
+                  <NavLinks
+                    to="Advantages"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact={true}
+                    offset={-80}
+                  >
+                    Why Choose Us
+                  </NavLinks>
+                )}
               </NavItem>
               <NavItem>
-                <NavLinks
+                {bgNav ? (
+                  <NavLinksA href="/#ContactMap">Locations</NavLinksA>
+                ) : (
+                  <NavLinks
+                    to="ContactMap"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact={true}
+                    offset={-80}
+                  >
+                    Locations
+                  </NavLinks>
+                )}
+                {/* <NavLinks
                   to="ContactMap"
                   smooth={true}
                   duration={500}
@@ -109,9 +140,10 @@ const Navbar = ({ toggle, Speed, bg }) => {
                   offset={-80}
                 >
                   Locations
-                </NavLinks>
+                </NavLinks> */}
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
+                
                 <NavLink
                   to="blogs"
                   smooth={true}
@@ -123,7 +155,7 @@ const Navbar = ({ toggle, Speed, bg }) => {
                 >
                   Blogs
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
               {/* <NavItem>
             
           <NavLinks >
