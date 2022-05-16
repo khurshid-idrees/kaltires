@@ -184,7 +184,7 @@ export default function ContactMap() {
           {officeLists.map((eachData) => (
             <Heading
               key={eachData.id}
-              href={`https://www.google.com/maps?t=k&q=loc:${eachData.geometry.coordinates}`}
+              href={eachData.properties.url}
               target="_blank"
               // click={FlyToStore(Markerwhatever(eachData))}
               // eventHandlers={{
