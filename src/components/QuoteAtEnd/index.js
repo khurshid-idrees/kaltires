@@ -22,9 +22,9 @@ const QuoteAtEnd = ({ isOpen, toggle }) => {
           place.
         </WWOCCParagraph>
         <WWOCCButton href="tel:800-808-0025">  
-          24/7 COMMERCIAL ROADSIDE SERVICE - CALL NOW   
+          24/7 COMMERCIAL ROADSIDE SERVICE - CALL NOW    
         </WWOCCButton>
-      </WWOCardContent>
+      </WWOCardContent>  
     </WWOCArd>  
   );
 };

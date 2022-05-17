@@ -2,9 +2,9 @@ import { FaBars } from 'react-icons/fa';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 import styled from 'styled-components';
-import bgimage from '../../images/QuoteAtEnd.png';
+import bgimage from '../../images/QuoteAtEnd.png'; 
 export const WWOCArd = styled.div`
-  background: transparent url(${bgimage}) no-repeat center center;
+  background: transparent url(${bgimage}) no-repeat center center; 
   display: flex;
   flex-direction: column;
   align-items: center;
