@@ -138,14 +138,14 @@ export const AboutContainerPara = styled.p`
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
-  text-align: justify;
-  width: 90%;
+  width: 90%; 
   padding: 25px 25px 25px 0px;
   color: #727272;
 
   max-width: 60rem;
   @media screen and (max-width: 768px) {
     font-size: 20px;
+    
   }
   @media screen and (max-width: 480px) {
     font-size: 18px;

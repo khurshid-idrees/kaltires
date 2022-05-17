@@ -9,7 +9,7 @@ import {
   SocialMediaActions,
   FooterLogo,
   FotterNav,
-  FotterNavH,
+  FotterNavH, 
   FotterContactN,
   FotterContact,
   FotterContactlist,
@@ -30,7 +30,7 @@ const FooterSection = ({ isOpen, toggle }) => {
           <FotterContact>
             <FotterContactlist>
               <FotterContactName>
-                <a href="mailto:info@kaltires.com">
+                <a href="mailto:info@kaltires.com" target="_blank">
                   <SocialMediaActions>
                     <AiOutlineMail />
                   </SocialMediaActions>
@@ -46,7 +46,7 @@ const FooterSection = ({ isOpen, toggle }) => {
             <FotterContactlist>
               <FotterContactName>
                 {' '}
-                <a href="tel:800-808-0025">
+                <a href="tel:800-808-0025" target="_blank">
                   <SocialMediaActions>
                     <FiPhoneCall />
                   </SocialMediaActions>
@@ -61,7 +61,7 @@ const FooterSection = ({ isOpen, toggle }) => {
             <FotterContactlist>
               <FotterContactName>
                 {' '}
-                <a href="https://www.google.com/maps/place/10156+Live+Oak+Ave,+Fontana,+CA+92335,+USA/@34.0685188,-117.4825613,17z/data=!3m1!4b1!4m5!3m4!1s0x80c34b3fc6e50489:0xde8aefe027f7319!8m2!3d34.0685144!4d-117.4803726">
+                <a href="https://www.google.com/maps/place/10156+Live+Oak+Ave,+Fontana,+CA+92335,+USA/@34.0685188,-117.4825613,17z/data=!3m1!4b1!4m5!3m4!1s0x80c34b3fc6e50489:0xde8aefe027f7319!8m2!3d34.0685144!4d-117.4803726" target="_blank">
                   <SocialMediaActions>
                     <FaMapMarkedAlt />
                   </SocialMediaActions>
@@ -73,34 +73,28 @@ const FooterSection = ({ isOpen, toggle }) => {
               </FotterContactNo>
             </FotterContactlist>
           </FotterContact>
-          {/* <SocialMediaActions>
-            <FaFacebookF/>
-            </SocialMediaActions> */}
-          {/* <FotterNavH>Email</FotterNavH> */}
-          {/* <FotterNavH>Company</FotterNavH>
-                <FotterNavH>Advantages</FotterNavH>
-                <FotterNavH>Products</FotterNavH>
-                <FotterNavH>Contact</FotterNavH> */}
+     
         </FotterNav>
       </footerMobileContainer>
 
       <FotterSocialMedia>
-        <SocialMediaActions href="https://www.facebook.com/kalgroupusa/">
+        <SocialMediaActions href="https://www.facebook.com/kalgroupusa/" target="_blank">
           <FaFacebookF />
         </SocialMediaActions>
         {/* <SocialMediaActions>
           <FaTwitter />
         </SocialMediaActions> */}
-        <SocialMediaActions href="https://www.instagram.com/kalgroupusa">
+        <SocialMediaActions href="https://www.instagram.com/kalgroupusa" target="_blank"> 
           <FaInstagram />
         </SocialMediaActions>
       </FotterSocialMedia>
 
       <FotterContactN>
-        © Kal Tires Inc, 2021 All rights reserved.{' '}
+        © Kal Tires Inc, 2021 All rights reserved.{' '}  
       </FotterContactN>
     </FooterContainer>
   );
 };
 
-export default FooterSection;
+export default FooterSection; 
+ 

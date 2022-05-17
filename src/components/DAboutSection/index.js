@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   AboutContainer,
   AboutContainerImageContent2,
@@ -11,9 +11,9 @@ import {
   AboutContainerButton,
   AboutContainerImageContent,
   AboutContainerImage,
-} from './DAboutSectionElement';
-import TiresWareHouse from '../../images/TireWarehouse.jpeg';
-import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
+} from "./DAboutSectionElement";
+import TiresWareHouse from "../../images/TireWarehouse.jpeg";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 const DAboutSection = ({ isOpen, toggle }) => {
   const location = useLocation();
   return (

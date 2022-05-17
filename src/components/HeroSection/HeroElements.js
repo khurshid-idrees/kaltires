@@ -78,6 +78,7 @@ z-index: 2;
 color: #ED1C24;
 
 @media screen and (max-width: 768px) {
+    margin-top:10rem; 
     font-size: 40px;
 }
 @media screen and (max-width: 480px) {
@@ -90,13 +91,15 @@ font-family: sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 65px;
-line-height: 76px;
+line-height: 72px; 
 text-align: center;
 z-index: 2;
 color: #FFFFFF;
 max-width: 60rem;
 @media screen and (max-width: 768px) {
+    margin-top:3rem;
     font-size: 24px;
+    line-height:28px;  
 }
 @media screen and (max-width: 480px) {
     font-size: 22px;

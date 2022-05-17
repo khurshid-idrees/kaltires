@@ -24,7 +24,7 @@ const HeroSection = () => {
       <HeroBg></HeroBg>
       <HeroContent>
         <HeroH1>KAL TIRES</HeroH1>
-        <HeroP>BECAUSE SO MUCH IS RIDING ON YOUR TIRES</HeroP>
+        <HeroP>BECAUSE SO MUCH IS RIDING ON YOUR TIRES</HeroP> 
       </HeroContent>
       <HeroPromoContainer>
         <HeroPromo>

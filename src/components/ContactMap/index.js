@@ -4,7 +4,7 @@ import ReactLoading from 'react-loading';
 import styled from 'styled-components';
 import React, { useState, useEffect } from 'react';
 import {
-  MapContainer,
+  MapContainer, 
   TileLayer,
   Marker,
   Popup,

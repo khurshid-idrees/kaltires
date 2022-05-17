@@ -156,7 +156,6 @@ export const WWOCCParagraph = styled.p`
   font-size: 1.1rem;
 
   padding: 22px;
-  text-align: justify;
   height: ${(props) => `${props.height}`}rem;
   color: #727272;
   @media screen (min-width: 1200px) {

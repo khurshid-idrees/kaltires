@@ -62,8 +62,9 @@ export const WWOCCParagraph = styled.p`
   color: #fff;
 
   max-width: 60rem;
-  @media screen and (max-width: 768px) {
-    font-size: 14px;
+  @media only screen and (max-width: 768px) {
+    line-height:17px;
+    font-size:28px; 
     width: 100%;
   }
   @media screen and (max-width: 480px) {
