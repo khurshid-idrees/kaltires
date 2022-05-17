@@ -2,6 +2,80 @@ export const officeLists = [
   {
     id: 1,
     type: 'Feature',
+    more: [
+      {
+        id: 1,
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [34.0693237, -117.4780847],
+        },
+        properties: {
+          state: 'CA',
+          ZipCode: '92335',
+
+          name: 'Fontana  CA 92335',
+          address: '15083 Valley Blvd, Fontana, CA 92335',
+          phone: '562-278-4931',
+          email: 'rmartinez@kaltires.com',
+          url: 'https://www.google.com/maps/place/15083+Valley+Blvd,+Fontana,+CA+92335,+USA/@34.0693237,-117.4780847,17z/data=!3m1!4b1!4m5!3m4!1s0x80c34b41ac34562d:0x6e84801266440fc5!8m2!3d34.0693237!4d-117.475896',
+        },
+      },
+      {
+        id: 1,
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [34.0508997, -117.4959756],
+        },
+        properties: {
+          state: 'CA',
+          ZipCode: '92337',
+
+          name: 'Fontana CA 92337',
+          address: '11184 Almond Ave',
+          phone: '562-278-4931',
+          email: 'rmartinez@kaltires.com',
+          url: 'https://www.google.com/maps/place/11184+Almond+Ave,+Fontana,+CA+92337,+USA/@34.0508997,-117.4959756,17z/data=!3m1!4b1!4m5!3m4!1s0x80c34b2dcd2e248f:0x1e725243a0a60dd8!8m2!3d34.0508997!4d-117.4937869',
+        },
+      },
+      {
+        id: 1,
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [34.0685144, -117.4825613],
+        },
+        properties: {
+          state: 'CA',
+          ZipCode: '92335',
+
+          name: 'Fontana CA 92335',
+          address: '10156 Live Oak AVE Fontana, CA 92335',
+          phone: '562-278-4931',
+          email: 'rmartinez@kaltires.com',
+          url: 'https://www.google.com/maps/place/10156+Live+Oak+Ave,+Fontana,+CA+92335,+USA/@34.0685144,-117.4825613,17z/data=!3m1!4b1!4m5!3m4!1s0x80c34b3fc6e50489:0xde8aefe027f7319!8m2!3d34.0685144!4d-117.4803726',
+        },
+      },
+      {
+        id: 1,
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [34.0521461, -117.4959756],
+        },
+        properties: {
+          state: 'CA',
+          ZipCode: '92337',
+
+          name: 'Fontana CA 92337',
+          address: '11090 ALMOND AVE, FONTANA CA 92337',
+          phone: '562-278-4931',
+          email: 'rmartinez@kaltires.com',
+          url: 'https://www.google.com/maps/place/11090+Almond+Ave,+Fontana,+CA+92337,+USA/@34.0521461,-117.4959756,17z/data=!3m1!4b1!4m5!3m4!1s0x80c34b2e7d99f65f:0x4c7b2a802289255c!8m2!3d34.0521461!4d-117.4937869',
+        },
+      },
+    ],
     geometry: {
       type: 'Point',
       coordinates: [34.0693237, -117.4780847],
@@ -17,60 +91,7 @@ export const officeLists = [
       url: 'https://www.google.com/maps/place/15083+Valley+Blvd,+Fontana,+CA+92335,+USA/@34.0693237,-117.4780847,17z/data=!3m1!4b1!4m5!3m4!1s0x80c34b41ac34562d:0x6e84801266440fc5!8m2!3d34.0693237!4d-117.475896',
     },
   },
-  {
-    id: 1,
-    type: 'Feature',
-    geometry: {
-      type: 'Point',
-      coordinates: [34.0508997, -117.4959756],
-    },
-    properties: {
-      state: 'CA',
-      ZipCode: '92337',
 
-      name: 'Fontana CA 92337',
-      address: '11184 Almond Ave',
-      phone: '562-278-4931',
-      email: 'rmartinez@kaltires.com',
-      url: 'https://www.google.com/maps/place/11184+Almond+Ave,+Fontana,+CA+92337,+USA/@34.0508997,-117.4959756,17z/data=!3m1!4b1!4m5!3m4!1s0x80c34b2dcd2e248f:0x1e725243a0a60dd8!8m2!3d34.0508997!4d-117.4937869',
-    },
-  },
-  {
-    id: 1,
-    type: 'Feature',
-    geometry: {
-      type: 'Point',
-      coordinates: [34.0685144, -117.4825613],
-    },
-    properties: {
-      state: 'CA',
-      ZipCode: '92335',
-
-      name: 'Fontana CA 92335',
-      address: '10156 Live Oak AVE Fontana, CA 92335',
-      phone: '562-278-4931',
-      email: 'rmartinez@kaltires.com',
-      url: 'https://www.google.com/maps/place/10156+Live+Oak+Ave,+Fontana,+CA+92335,+USA/@34.0685144,-117.4825613,17z/data=!3m1!4b1!4m5!3m4!1s0x80c34b3fc6e50489:0xde8aefe027f7319!8m2!3d34.0685144!4d-117.4803726',
-    },
-  },
-  {
-    id: 1,
-    type: 'Feature',
-    geometry: {
-      type: 'Point',
-      coordinates: [34.0521461, -117.4959756],
-    },
-    properties: {
-      state: 'CA',
-      ZipCode: '92337',
-
-      name: 'Fontana CA 92337',
-      address: '11090 ALMOND AVE, FONTANA CA 92337',
-      phone: '562-278-4931',
-      email: 'rmartinez@kaltires.com',
-      url: 'https://www.google.com/maps/place/11090+Almond+Ave,+Fontana,+CA+92337,+USA/@34.0521461,-117.4959756,17z/data=!3m1!4b1!4m5!3m4!1s0x80c34b2e7d99f65f:0x4c7b2a802289255c!8m2!3d34.0521461!4d-117.4937869',
-    },
-  },
   {
     id: 2,
     type: 'Feature',

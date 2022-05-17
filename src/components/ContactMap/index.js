@@ -181,24 +181,45 @@ export default function ContactMap() {
       <Container id="ContactMap">
         <OfficeList>
           <OfficeHeading>Our Locations</OfficeHeading>
-          {officeLists.map((eachData) => (
-            <Heading
-              key={eachData.id}
-              href={eachData.properties.url}
-              target="_blank"
-              // click={FlyToStore(Markerwhatever(eachData))}
-              // eventHandlers={{
-              //   click: (e) => {
-              //     Markerwhatever(e);
-              //   },
-              // }}
-            >
-              <img src={icon1} alt="" width={25} />
-              <h1>{eachData.properties.name}</h1>,
-              <Address>{eachData.properties.state}</Address>
-              <Address>{eachData.properties.ZipCode}</Address>
-            </Heading>
-          ))}
+          {officeLists.map((eachData) =>
+            eachData.more ? (
+              eachData.more.map((each) => (
+                <Heading
+                  key={each.id}
+                  href={each.properties.url}
+                  target="_blank"
+                  // click={FlyToStore(Markerwhatever(eachData))}
+                  // eventHandlers={{
+                  //   click: (e) => {
+                  //     Markerwhatever(e);
+                  //   },
+                  // }}
+                >
+                  <img src={icon1} alt="" width={25} />
+                  <h1>{each.properties.name}</h1>,
+                  <Address>{each.properties.state}</Address>
+                  <Address>{each.properties.ZipCode}</Address>
+                </Heading>
+              ))
+            ) : (
+              <Heading
+                key={eachData.id}
+                href={eachData.properties.url}
+                target="_blank"
+                // click={FlyToStore(Markerwhatever(eachData))}
+                // eventHandlers={{
+                //   click: (e) => {
+                //     Markerwhatever(e);
+                //   },
+                // }}
+              >
+                <img src={icon1} alt="" width={25} />
+                <h1>{eachData.properties.name}</h1>,
+                <Address>{eachData.properties.state}</Address>
+                <Address>{eachData.properties.ZipCode}</Address>
+              </Heading>
+            )
+          )}
           <ul class="list"></ul>
         </OfficeList>
         <MapInside id="map">
