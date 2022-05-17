@@ -6,7 +6,7 @@ import {
   WWOCCParagraph,
   WWOCCButton,
 } from './QuoteAtEndElements';
-import { Link } from 'react-scroll';
+import { Link } from 'react-scroll'; 
 
 const QuoteAtEnd = ({ isOpen, toggle }) => {
   return (
@@ -20,13 +20,13 @@ const QuoteAtEnd = ({ isOpen, toggle }) => {
           question, we will make sure to direct your concerns and Provide an
           Effective solution. You can call, email or find us directly at our
           place.
-        </WWOCCParagraph>
-        <WWOCCButton href="tel:800-808-0025">  
+        </WWOCCParagraph> 
+        <WWOCCButton href="tel:800-808-0025">   
           24/7 COMMERCIAL ROADSIDE SERVICE - CALL NOW    
         </WWOCCButton>
-      </WWOCardContent>  
+      </WWOCardContent>   
     </WWOCArd>  
   );
 };
 
-export default QuoteAtEnd;
+export default QuoteAtEnd;   
